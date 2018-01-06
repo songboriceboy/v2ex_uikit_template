@@ -8,39 +8,83 @@
     <script src="jquery/jquery.js"></script>
     <script src="uikit-2.25.0/js/uikit.min.js"></script>
     <style>
+
+        @media screen and (min-width:480px){
+            html{
+                font-size: 10px; !important;
+            }
+        }
+
+        @media screen and (min-width:960px){
+            html{
+                font-size: 14px;!important;
+            }
+        }
+
         .question-item{
             display: flex;
             border-bottom: 1px solid grey;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
         .question-item .avtar{
-            flex:0 0 48px
+            flex:0 0 4.8rem
 
         }
 
         .question-item .question-detail{
-            padding-left: 10px;
+            padding-left: 1rem;
             flex:1 1 0
 
         }
         .question-item .question-detail .content{
 
-            line-height: 20px;
-            font-size: 16px;
-            margin-bottom: 8px;
+            line-height: 2rem;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
 
         }
         .question-item .comment-count{
             align-self: center;
 
         }
+        .uk-navbar{
+            background-color: #00b4f5;
+
+        }
+        .uk-navbar{
+            background-color: #00b4f5;
+
+        }
+        .uk-navbar-brand,.uk-navbar ul li a{
+            color: white;
+
+        }
+        .uk-navbar ul li a:hover{
+            background-color: #0593d3;;
+
+        }
+        .uk-navbar-nav>li.uk-active>a {
+            background-color: #0593d3;;
+            color: white;
+        }
+        @media (min-width: 1440px){
+            .uk-container {
+                max-width: 1400px;
+                padding: 0 35px;
+            }
+        }
+
+        body{
+            background-color: #e2e2e2;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+<div class="uk-container uk-container-center uk-margin-bottom">
 
-    <nav class="uk-navbar uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-bottom">
         <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
         <ul class="uk-navbar-nav uk-hidden-small">
             <li>
@@ -70,16 +114,15 @@
         <div class="uk-width-medium-3-4">
 
             <div class="uk-panel uk-panel-box">
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-                <a href="#">Web开发</a>
-            </div>
-            <div class="uk-panel uk-panel-box">
-
+                <h3 class="uk-panel-title">
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                    <a href="#">Web开发</a>
+                </h3>
                 <ul class="uk-list">
                     <li class="question-item">
                         <div class="avtar">

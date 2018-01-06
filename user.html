@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-height-1-1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link href="uikit-2.25.0/css/uikit.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="uikit-2.25.0/js/uikit.min.js"></script>
+    <style>
+
+
+        .header {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body class="uk-height-1-1">
+
+<div class="uk-container uk-container-center uk-margin-bottom">
+
+    <nav class="uk-navbar uk-margin-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li>
+                <a href="layouts_frontpage.html">Frontpage</a>
+            </li>
+            <li>
+                <a href="layouts_portfolio.html">Portfolio</a>
+            </li>
+            <li class="uk-active">
+                <a href="layouts_blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="layouts_documentation.html">Documentation</a>
+            </li>
+            <li>
+                <a href="layouts_contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="layouts_login.html">Login</a>
+            </li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
+    </nav>
+
+</div>
+
+<div class="header">
+    <div class="uk-container uk-container-center uk-margin-bottom">
+        <div class="uk-grid">
+            <div class="uk-width-medium-1-5">
+                <div class="profile__heading--avatar-warp"><a href="/u/songboriceboy"><img
+                        class="uk-border-circle"
+                        src="https://sfault-avatar.b0.upaiyun.com/133/665/1336656935-5a2a1ea7d5f20_huge256"
+                        alt="songboriceboy"></a><input type="file" id="avatarFile" name="avatar" class="file hide">
+                    <div class="profile__avatar-uploader"><span>上传头像</span></div>
+                </div>
+                <div class="profile__heading--social">
+                    <ul class="sn-inline profile__heading--social-item">
+                        <!--<li><a class="opacity25 icon-sn-google" target="_blank" href="/user/oauth/google"></a></li>-->
+                        <!--<li><a class="opacity25 icon-sn-linkedin" target="_blank" href="/user/oauth/linkedin"></a></li>-->
+                        <!--<li><a class="opacity25 icon-sn-twitter" target="_blank" href="/user/oauth/twitter"></a></li>-->
+                        <!--<li><a class="opacity25 icon-sn-facebook" target="_blank" href="/user/oauth/facebook"></a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-medium-2-5">
+                <h2 class="profile__heading--name">
+                    songboriceboy
+                    <small class="ml15"><a href="/u/songboriceboy/about">查看完整档案</a></small>
+                </h2>
+                <div class="profile__heading--award"><a class="profile__rank-btn" href="/u/songboriceboy/rank"><span
+                        class="h4">27</span><span class="profile__rank-btn-text">声望</span></a>
+                    <div class="profile__heading--award-badge"><span class="badge badge--o badge--sf badge--gold"><i
+                            class="badge__icon"></i></span><span
+                            class="profile__heading--award-badge-count">0</span><span
+                            class="badge badge--o badge--sf badge--silver"><i class="badge__icon"></i></span><span
+                            class="profile__heading--award-badge-count">0</span><span
+                            class="badge badge--o badge--sf badge--bronze"><i class="badge__icon"></i></span><span
+                            class="profile__heading--award-badge-count">3</span></div>
+                </div>
+                <div class="profile__heading--other">
+                    <script type="text/template" class="tpl__city--form">
+                        <form
+                                class="form form--profile form-inline form__city"
+                                data-action="/api/user/homepage/city/edit">
+                            <div class="form-group"><input placeholder="现居城市       " name="city" data-city="<%- city %>"
+                                                           class="input-sm tagsInput form-control mr10">
+                                <button type="button" class="btn btn-sm btn-primary js-submit">保存</button>
+                            </div>
+                        </form></script>
+                    <script type="text/template" class="tpl__city--content"><%- city.name %><span
+                            class="profile__heading-edit btn btn-xs" data-type="city"><i class="fa fa-pencil"
+                                                                                         aria-hidden="true"></i>编辑</span></script>
+                    <span class="profile__heading--other-item "><i class="fa fa-map-marker"></i><span
+                            class="profile__city"><span
+                            class="profile__heading-edit   btn btn-xs profile__heading-edit--init" data-type="city"><i
+                            class="fa fa-pencil hide" aria-hidden="true"></i>填写现居城市</span></span></span>
+                    <script type="text/template" class="tpl__school--form">
+                        <form
+                                class="form form--profile form-inline form__school"
+                                data-action="/api/user/homepage/school/edit">
+                            <div class="form-group"><input placeholder="院校名称       " name="name"
+                                                           class="input-sm tagsInput form-control mr10"
+                                                           data-school="<%- school[0]%>"><input placeholder="所学专业"
+                                                                                                name="department"
+                                                                                                class="input-sm tagsInput form-control mr10"
+                                                                                                value="<%- school[1]%>">
+                                <button type="button" class="btn btn-sm btn-primary js-submit">保存</button>
+                            </div>
+                        </form></script>
+                    <script type="text/template" class="tpl__school--content"><%= school[0] %><span
+                            class="profile__heading--other-item-fgx">&nbsp;&nbsp;|&nbsp;&nbsp;</span><%= school[1] %>
+                    <span class="profile__heading-edit btn btn-xs" data-type="school"><i class="fa fa-pencil"
+                                                                                         aria-hidden="true"></i>编辑</span></script>
+                    <span class="profile__heading--other-item "><i class="fa fa-graduation-cap"
+                                                                   aria-hidden="true"></i><span class="profile__school"><span
+                            class="profile__heading--other-item-fgx hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span
+                            class="profile__heading-edit   btn btn-xs profile__heading-edit--init" data-type="school"><i
+                            class="fa fa-pencil hide" aria-hidden="true"></i>填写毕业院校</span></span></span>
+                    <script type="text/template" class="tpl__company--form">
+                        <form
+                                class="form form--profile form-inline form__company"
+                                data-action="/api/user/homepage/company/edit">
+                            <div class="form-group"><input placeholder="公司/组织名称" name="name"
+                                                           class="tagsInput form-control mr10 input-sm"
+                                                           value="<%- company[0]%>"><input placeholder="职位头衔"
+                                                                                           name="role"
+                                                                                           class="tagsInput form-control mr10 input-sm"
+                                                                                           value="<%- company[1]%>">
+                                <button type="button" class="btn btn-primary btn-sm js-submit">保存</button>
+                            </div>
+                        </form></script>
+                    <script type="text/template" class="tpl__company--content"><%= company[0]%><span
+                            class="profile__heading--other-item-fgx">&nbsp;&nbsp;|&nbsp;&nbsp;</span><%= company[1] %>
+                    <span class="profile__heading-edit btn btn-xs" data-type="company"><i class="fa fa-pencil"
+                                                                                          aria-hidden="true"></i>编辑</span></script>
+                    <span class="profile__heading--other-item "><i class="fa fa-briefcase" aria-hidden="true"></i><span
+                            class="profile__company">neu<span class="profile__heading--other-item-fgx ">&nbsp;&nbsp;|&nbsp;&nbsp;</span>teacher
+                                        <span class="profile__heading-edit   btn btn-xs " data-type="company"><i
+                                                class="fa fa-pencil " aria-hidden="true"></i>编辑</span></span></span>
+
+                    <span class="profile__heading--other-item "><i class="fa fa-link"></i><span class="profile__site"><a
+                            class="profile__heading--other-item-link" target="_blank" href="http://"></a><span
+                            class="profile__heading-edit  btn btn-xs profile__heading-edit--init" data-type="site"><i
+                            class="fa fa-pencil hide" aria-hidden="true"></i>填写个人主网站</span></span></span></div>
+            </div>
+            <div class="uk-width-medium-2-5">
+                <div class="profile__heading--desc-heading"><span class="profile__heading--desc-heading-dot-warp"><span
+                        class="profile__heading-dot profile__heading-dot--red"></span><span
+                        class="profile__heading-dot profile__heading-dot--yellow"></span><span
+                        class="profile__heading-dot profile__heading-dot--green"></span></span>
+                    <div class="pull-right"><span data-type="desc"
+                                                  class="profile__heading-edit   btn btn-xs profile__heading--desc-heading-edit"><i
+                            class="fa fa-pencil" aria-hidden="true"></i>编辑</span></div>
+                </div>
+                <div class="profile__heading--desc-body">
+                    <script type="text/template" class="tpl__desc--form">
+                        <form
+                                class="form form--profile form__desc"
+                                data-action="/api/user/homepage/description/edit">
+                            <div class="form-group"><textarea class="form-control" name="description" rows="4"><%= description %></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-default js-cancel mr10">取消</button>
+                                <button type="button" class="btn btn-primary js-submit">保存</button>
+                            </div>
+                        </form></script>
+                    <script type="text/template"
+                            class="tpl__desc--content"><% if(parsedText){ %><%= parsedText %><% }else{ %>
+                    <div style="white-space: pre"> _
+                        | |__ _ _ __ _
+                        | '_ \| | | |/ _` |
+                        | |_) | |_| | (_| |
+                        |_.__/ \__,_|\__, |
+                        |___/ 暂时没有个人简介，
+                        <a data-type="desc" href="javascript:;"
+                           class="profile__heading-edit">立即添加</a></div><% } %></script>
+                    <div class="profile__desc"><p>闲看庭前花开花落 漫随天外云卷云舒</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-container uk-container-center uk-margin-bottom">
+
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-6">
+            <div class="mb15 hide"></div>
+            <div class="uk-panel uk-panel-box row">
+                <div class="col-md-6 col-xs-6" style="border-right: 1px solid #eee;"><a
+                        href="/u/songboriceboy/users/following"><span>关注了</span><span class="h5">4 人</span></a></div>
+                <div class="col-md-6 col-xs-6"><a href="/u/songboriceboy/users/followed"><span>粉丝</span><span
+                        class="h5">1 人</span></a></div>
+            </div>
+            <ul class="uk-nav uk-panel uk-panel-box">
+                <li role="separator" class="divider"><a></a></li>
+                <li class="active"><a href="/u/songboriceboy"><span>我的主页</span></a></li>
+                <li><a href="/u/songboriceboy/answers"><span>我的回答
+                                        </span><span class="count"> 1</span></a></li>
+                <li><a href="/u/songboriceboy/questions"><span>我的提问
+                                        </span><span class="count"></span></a></li>
+                <li><a href="/u/songboriceboy/articles"><span>我的文章
+                                        </span><span class="count"> 2</span></a></li>
+                <li><a href="/u/songboriceboy/lives"><span>我的讲座
+                                        </span><span class="count"></span></a></li>
+                <li><a href="/u/songboriceboy/notes"><span>我的笔记
+                                        </span><span class="count"> 1</span></a></li>
+                <li><a href="/u/songboriceboy/posts"><span>我的分享
+                                        </span><span class="count"></span></a></li>
+                <li><a href="/u/songboriceboy/bookmarks"><span>我的收藏夹
+                                            </span><span class="count"> 1</span></a></li>
+                <li role="separator" class="divider"><a></a></li>
+                <li><a href="/u/songboriceboy/activities"><span>个人动态</span></a></li>
+                <li><a href="/u/songboriceboy/questions/following"><span>我关注的</span></a></li>
+                <li><a href="/u/songboriceboy/tags"><span>标签得分</span></a></li>
+                <li><a href="/u/songboriceboy/badges"><span>获得徽章</span><span class="count"> 3</span></a></li>
+                <li><a href="/u/songboriceboy/rank"><span>声望记录</span></a></li>
+                <li><a href="/user/history"><span>浏览记录</span></a></li>
+            </ul>
+        </div>
+
+        <div class="uk-width-medium-4-6">
+            <div class="uk-panel uk-panel-box">
+                <form class="profile__init-item" data-api="/api/user/homepage/city/edit"><h4
+                        class="profile__init-title">你现在居住在哪个城市？<i class="fa  fa-close profile__init-close"></i></h4>
+                    <div class="profile__init-form">
+                        <div class="form-group"><input name="city" class="form-control hidden" placeholder="当前居住城市"
+                                                       autocomplete="off">
+                            <div class="sf-typeHelper sf-typeHelper--fortags sf-typeHelper--single"><input type="text"
+                                                                                                           data-role="sf_typeHelper-input"
+                                                                                                           class="sf-typeHelper-input"
+                                                                                                           placeholder="当前居住城市"
+                                                                                                           style="width: 6em;">
+                                <ul class="sf-typeHelper-list dropdown-menu"></ul>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-default mr10 profile__init-skip">跳过</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="uk-panel uk-panel-box mt30">
+                <div class="panel-heading"><h3 class="panel-title inline">高分内容</h3>
+                    <div class="btn-group pull-right" role="group" aria-label="..."><a
+                            class="btn btn-xs btn-default active" href="#navContent" aria-controls="navContent"
+                            role="tab" data-toggle="tab">概览</a><a class="btn btn-xs btn-default" href="#navQuestion"
+                                                                  aria-controls="navQuestion" role="tab"
+                                                                  data-toggle="tab">提问</a><a
+                            class="btn btn-xs btn-default" href="#navAnswer" aria-controls="navAnswer" role="tab"
+                            data-toggle="tab">回答</a><a class="btn btn-xs btn-default" href="#navArticle"
+                                                       aria-controls="navArticle" role="tab" data-toggle="tab">文章</a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="profile__content"><!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="navContent">
+                                <ul class="profile-mine__content">
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                                                                                    回答
+                                                </span><span class="hidden-xs hidden-sm hidden-md label label-success">
+                                                    1票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title"
+                                                href="/q/1010000012156535/a-1020000012162474">jsp如何获取文章中的链接？</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                                                                                                                                            文章
+                                                </span><span
+                                                class="hidden-xs hidden-sm hidden-md label label-warning  ">
+                                                    0票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title" href="/a/1190000012122057">artTemplate的简单用法</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                                                                                                                                            文章
+                                                </span><span
+                                                class="hidden-xs hidden-sm hidden-md label label-warning  ">
+                                                    0票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title"
+                                                href="/a/1190000012162500">JSON应知应会</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane " id="navQuestion">
+                                <div class="init"><p class="text-center">
+                                    (ﾟ∀ﾟ　)<br>
+                                    暂时没有任何数据
+                                </p></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane " id="navAnswer">
+                                <ul class="profile-mine__content">
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                            回答
+
+                                                </span><span class="hidden-xs hidden-sm hidden-md label label-success">
+                                                    1票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title"
+                                                href="/q/1010000012156535/a-1020000012162474">jsp如何获取文章中的链接？</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane " id="navArticle">
+                                <ul class="profile-mine__content">
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                            文章
+
+                                                </span><span
+                                                class="hidden-xs hidden-sm hidden-md label label-warning  ">
+                                                    0票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title"
+                                                href="/a/1190000012162500">JSON应知应会</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="pr0 pull-left"><span class="profile-mine__content--type">
+                                                                                                            文章
+
+                                                </span><span
+                                                class="hidden-xs hidden-sm hidden-md label label-warning  ">
+                                                    0票
+                                                </span></div>
+                                        <div class="pl10 profile-mine__content--title-warp "><a
+                                                class="profile-mine__content--title" href="/a/1190000012122057">artTemplate的简单用法</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-right profile__content--footer">
+                            查看全部 <a href="/u/songboriceboy/questions?sort=vote">提问</a>、<a
+                                href="/u/songboriceboy/answers?sort=vote">回答</a>、<a
+                                href="/u/songboriceboy/articles?sort=vote">文章</a> →
+                        </p></div>
+                </div>
+            </div><!-- 个人动态（timeline）开始 -->
+            <div class="uk-panel uk-panel-box mt30 timeline timeline-jsnotwork">
+                <div class="panel-heading"><h3 class="panel-title">个人动态</h3></div>
+                <div class="panel-body pt0 pl0">
+
+
+                </div>
+            </div><!-- 个人动态结束 --></div>
+        <div class="uk-width-medium-1-6">
+            <div class="uk-panel uk-panel-box  "><h4 class="profile__heading--tech-heading">获得 <a
+                    href="/u/songboriceboy/badges">3</a> 枚徽章</h4>
+                <div style="margin-bottom: -5px;"><a class="profile__badges-item mb5 mr5"
+                                                     href="/b/1120000000161467?userId=1030000007744879"><span
+                        class="badge badge--sf badge--bronze"><i
+                        class="badge__icon"></i><span>支持者</span></span></a><span
+                        class="profile__badges-count hide">×</span><a class="profile__badges-item mb5 mr5"
+                                                                      href="/b/1120000000161421?userId=1030000007744879"><span
+                        class="badge badge--sf badge--bronze"><i
+                        class="badge__icon"></i><span>辅导员</span></span></a><span
+                        class="profile__badges-count hide">×</span><a class="profile__badges-item mb5 mr5"
+                                                                      href="/b/1120000000161473?userId=1030000007744879"><span
+                        class="badge badge--sf badge--bronze"><i
+                        class="badge__icon"></i><span>见多识广</span></span></a><span
+                        class="profile__badges-count hide">×</span></div>
+            </div>
+            <div class="uk-panel uk-panel-box hidden"><h4 class="profile__heading--tech-heading">发起 <a
+                    href="/u/songboriceboy/lives?type=started">0</a> 场讲座</h4>
+                <div style="margin-bottom: -5px;"></div>
+            </div>
+            <div class="uk-panel uk-panel-box  ">
+
+                <h4 class="profile__heading--tech-heading">擅长技能
+                    <div class="pull-right"><span data-type="tech" class="profile__heading-edit  btn btn-xs"><i
+                            class="fa fa-pencil" aria-hidden="true"></i>编辑</span></div>
+                </h4>
+                <div class="profile__tech">
+                    <ul class="taglist--inline multi mb0 mt5 fs13">
+                        <li class="tagPopup"><a class="tag" href="/t/java" data-toggle="popover"
+                                                data-id="1040000000089449" data-original-title="java"><img
+                                src="https://sfault-avatar.b0.upaiyun.com/868/271/868271510-54cb382abb7a1_small">
+                            java
+                        </a></li>
+                        <li class="tagPopup"><a class="tag" href="/t/javascript" data-toggle="popover"
+                                                data-id="1040000000089436" data-original-title="javascript">
+                            javascript
+                        </a></li>
+                        <li class="tagPopup"><a class="tag" href="/t/mysql" data-toggle="popover"
+                                                data-id="1040000000089439" data-original-title="mysql"><img
+                                src="https://sfault-avatar.b0.upaiyun.com/949/844/9498447-54cb56e325a72_small">
+                            mysql
+                        </a></li>
+                        <li class="tagPopup"><a class="tag" href="/t/git" data-toggle="popover"
+                                                data-id="1040000000089459" data-original-title="git">
+                            git
+                        </a></li>
+                        <li class="tagPopup"><a class="tag" href="/t/spring" data-toggle="popover"
+                                                data-id="1040000000090103" data-original-title="spring">
+                            spring
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-panel uk-panel-box ">
+                <h4>开源项目 &amp; 著作
+                    <div class="pull-right"><span data-type="url" data-url="/u/songboriceboy/about#profile__project"
+                                                  class="profile__heading-edit btn btn-xs "><i class="fa fa-pencil"
+                                                                                               aria-hidden="true"></i>编辑</span>
+                    </div>
+                </h4>
+                <div class="profile__project">
+                    <div class="init"><p class="text-center">
+                        (ﾟ∀ﾟ　)<br>
+                        暂时没有，<a href="/u/songboriceboy/about#profile__project">立即添加</a></p></div>
+                </div>
+            </div>
+            <div class="uk-panel uk-panel-box">
+                <div class="uk-panel uk-panel-box"><p> 注册于 2016年12月09日<br>个人主页被 50 人浏览</p>
+                    <p></p>
+                    <div class="profile__share">
+                        <div class="widget-share__full" data-text="" data-url="https://segmentfault.com/u/songboriceboy"
+                             data-shorturl="http://sfau.lt/bPGEXz">
+                            <div style="margin-bottom:10px;">分享扩散：</div>
+                            <div class="widget-share-network sharer-0" style="display: block;">
+                                <ul class="sn-inline">
+                                    <li data-network="weibo"><a href="javascript:void(0);"
+                                                                class="entypo-weibo icon-sn-weibo share-1"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="分享至新浪微博">新浪微博</a></li>
+                                    <li data-network="wechart"><a href="javascript:void(0);"
+                                                                  class="entypo-wechart icon-sn-weixin share-2"
+                                                                  data-toggle="tooltip" data-placement="top" title=""
+                                                                  data-original-title="分享至微信">微信</a></li>
+                                    <li data-network="twitter"><a href="javascript:void(0);"
+                                                                  class="entypo-twitter icon-sn-twitter share-3"
+                                                                  data-toggle="tooltip" data-placement="top" title=""
+                                                                  data-original-title="分享至 Twitter">Twitter</a></li>
+                                    <li data-network="facebook"><a href="javascript:void(0);"
+                                                                   class="entypo-facebook icon-sn-facebook share-4"
+                                                                   data-toggle="tooltip" data-placement="top" title=""
+                                                                   data-original-title="分享至 Facebook">Facebook</a></li>
+                                </ul>
+                            </div>
+                            <a type="button" class="btn btn-sm shareMore btn-sn-more" data-toggle="popover"
+                               data-placement="top" data-url="https://segmentfault.com/u/songboriceboy"
+                               data-shorturl="http://sfau.lt/bPGEXz"><span class="icon-sn-dotted" data-original-title=""
+                                                                           title=""></span><strong
+                                    class="visible-xs-inline">•••</strong></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="layouts_frontpage.html">Frontpage</a>
+            </li>
+            <li>
+                <a href="layouts_portfolio.html">Portfolio</a>
+            </li>
+            <li class="uk-active">
+                <a href="layouts_blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="layouts_documentation.html">Documentation</a>
+            </li>
+            <li>
+                <a href="layouts_contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="layouts_login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

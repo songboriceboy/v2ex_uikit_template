@@ -54,6 +54,19 @@
     }
 }
 
-body{
-    background-color: #e2e2e2;
+@media (min-width: 1440px){
+    .uk-container {
+        max-width: 1400px;
+        padding: 0 35px;
+    }
 }
+@media (min-width: 1600px){
+    .uk-container {
+        max-width: 1600px;
+        padding: 0 35px;
+    }
+}
+
+/*body{*/
+    /*background-color: #e2e2e2;*/
+/*}*/

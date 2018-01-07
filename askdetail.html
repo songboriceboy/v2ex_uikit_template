@@ -200,11 +200,7 @@
                         <div class="uk-grid" data-uk-grid-margin>
                             <div class="uk-width-1-1">
                                 <div id="destoon_answer">
-                                    <div class="">
-                                        <div class="">
-                                            <iframe src="" name="send" id="send" style="display:none;"></iframe>
-                                        </div>
-                                    </div>
+
                                     <div class="b10"></div>
                                     <a name="top"></a>
                                     <div id="destoon_answers">
@@ -276,7 +272,7 @@
                                 <div class="" style="">
                                     <div class="uk-panel uk-panel-box" style="">
                                         <h3 class="uk-panel-title"><i class="uk-icon-briefcase"></i> 我来回答</h3>
-                                        <form method="post" action="answer.php" target="send" id="dform" onsubmit="return check();" class="uk-form" style="">
+                                        <form method="post" action="answer.php" target="send" id="dform"  class="uk-form" style="">
                                             <input type="hidden" name="items" value="2">
                                             <input type="hidden" name="itemid" value="127">
                                             <div class="px14" style="">
@@ -284,7 +280,7 @@
                                                     <tbody style=""><tr style="">
                                                         <td align="right" width="100">答案内容：</td>
                                                         <td style=""><textarea name="content" id="content" ></textarea>
-                                                          
+
                                                             <span id="dcontent" class="f_red px12"></span>
                                                         </td>
                                                     </tr>
@@ -296,7 +292,7 @@
                                                         <td align="right" class="uk-text-middle"><span class="f_red">*</span> 验证码：</td>
                                                         <td class="px12"><div class="uk-form-icon">
                                                             <i class="uk-icon-question-circle" id="dcaptcha"></i>
-                                                            <input autocomplete="off" maxlength="4" onkeyup="checkcaptcha_keyup(this.value);" class="uk-form-width-small" name="captcha" type="text" id="captcha" onfocus="showcaptcha(1);" placeholder="输入验证码" onblur="checkcaptcha(this.value);">&nbsp;<img src="http://www.mooban.cn/api/captcha.png.php?action=image" data-uk-tooltip="{pos:'right',animation:true}" title="验证码,看不清楚?请点击刷新<br/>字母不区分大小写" alt="魔工坊" align="absmiddle" id="captchapng" onclick="reloadcaptcha();" style="cursor: pointer; height: 30px;">
+                                                            <input autocomplete="off" maxlength="4" class="uk-form-width-small" name="captcha" type="text" id="captcha" onfocus="showcaptcha(1);" placeholder="输入验证码" onblur="checkcaptcha(this.value);">&nbsp;<img src="http://www.mooban.cn/api/captcha.png.php?action=image" data-uk-tooltip="{pos:'right',animation:true}" title="验证码,看不清楚?请点击刷新<br/>字母不区分大小写" alt="魔工坊" align="absmiddle" id="captchapng" onclick="reloadcaptcha();" style="cursor: pointer; height: 30px;">
                                                         </div>
                                                             <span id="dcaptcha" class="f_red"></span></td>
                                                     </tr>

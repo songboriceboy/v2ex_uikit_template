@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link href="uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <link href="mooban.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="uikit-2.25.0/js/uikit.min.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<header class="uk-hidden-small mb-a" id="top-header">
+    <div class="uk-container uk-container-center">
+        <nav class="uk-navbar">
+            <a class="uk-navbar-brand mb-hover-360" href="http://www.mooban.cn/" title="魔工坊_专业模板分享平台"
+               data-uk-tooltip="{pos:'bottom',animation:true,offset:-10}">
+                <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60">
+                &nbsp;<img src="http://www.mooban.cn/skin/moob/image/logo.gif" alt="魔工坊">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <ul class="uk-navbar-nav">
+                <li><a href="http://www.mooban.cn/">首页</a></li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/down/">模板</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/original/">原创</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/source/">源码</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/plugin/">插件</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/material/">素材</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://school.mooban.cn/">教程</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/know/">问答</a>
+
+                </li>
+                <li class="uk-parent uk-hidden-medium uk-active" data-uk-dropdown="">
+                    <a href="http://st.mooban.cn/?fr=mooban" target="_blank">更多</a>
+
+                </li>
+            </ul>
+
+            <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
+                <div class="uk-button-group"><a class="uk-button uk-button-primary f_white mr5"
+                                                href="http://www.mooban.cn/member/register.php">免费注册</a><a
+                        class="uk-button uk-button-primary f_white"
+                        href="http://www.mooban.cn/member/login.php">立即登录</a></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--彩色分割线-->
+<div class="head_bottom uk-hidden-small nprogress-custom-parent" id="hb1">&nbsp;
+    <div id="nprogress">
+    <div class="bar" role="bar" >
+        <div class="peg"></div>
+    </div>
+
+    </div>
+</div>
+
+<!--小屏手机版头部-->
+<div class="uk-container uk-visible-small touch-nav">
+    <div class="uk-grid">
+        <div class="uk-width-4-6">
+            <div class="uk-navbar-brand uk-navbar-center uk-float-left" id="touch_brand">
+                <a class="w1" href="http://www.mooban.cn/down/"> <i class="uk-icon-home"></i> 会员 - 魔工坊</a></div>
+        </div>
+        <div class="uk-width-2-6">
+            <nav class="uk-navbar">
+                <a href="#offcanvas" class="uk-navbar-toggle uk-float-right w1" data-uk-offcanvas=""></a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="b20 uk-visible-small"></div>
+<div class="b20 uk-visible-small"></div>
+<!--小屏手机版offcanvas-->
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li class="uk-active"><a href="http://www.mooban.cn/"><i class="uk-icon-home"></i> 首页</a></li>
+            <li><a href="http://www.mooban.cn/down/"><i class="uk-icon-folder-o"></i> 模板</a></li>
+            <li><a href="http://www.mooban.cn/original/"><i class="uk-icon-folder-o"></i> 原创</a></li>
+            <li><a href="http://www.mooban.cn/source/"><i class="uk-icon-folder-o"></i> 源码</a></li>
+            <li><a href="http://www.mooban.cn/plugin/"><i class="uk-icon-folder-o"></i> 插件</a></li>
+            <li><a href="http://www.mooban.cn/material/"><i class="uk-icon-folder-o"></i> 素材</a></li>
+            <li><a href="http://school.mooban.cn/"><i class="uk-icon-folder-o"></i> 教程</a></li>
+            <li><a href="http://www.mooban.cn/know/"><i class="uk-icon-folder-o"></i> 问答</a></li>
+            <li class="uk-parent">
+                <a href="#"><i class="uk-icon-user"></i> 会员相关</a>
+                <div>
+                    <ul class="uk-nav-sub uk-text-small" id="mb_member_touch">
+                        <li><a href="http://www.mooban.cn/member/register.php">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="uk-icon-mail-forward"></i> 免费注册</a></li>
+                        <li><a href="http://www.mooban.cn/member/login.php">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="uk-icon-mail-forward"></i> 立即登录</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--整体背景-->
+<div class="mb-cover">
+    <div class="b20"></div>
+<!--固定宽度，居中对齐-->
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-medium-1-4">
+                <div class="uk-panel uk-panel-box">
+                    <div class="uk-text-center">
+                        <a target="_blank" href="http://qingsh.mzone.mooban.cn/" data-uk-tooltip="{pos:'top',offset:5,animation:true}" title="TA的主页" class="uk-border-circle uk-thumbnail uk-overlay-toggle uk-animation-hover mb-member-home" rel="nofollow">
+                            <div class="uk-overlay uk-border-circle mb-hover-360">
+                                <img class="uk-border-circle" width="120" height="120" src="http://www.mooban.cn/api/avatar/show.php?username=qingsh&amp;size=large&amp;time=1515319495" alt="魔工坊">
+                                <div class="uk-overlay-area uk-border-circle uk-animation-scale-down"></div>
+                            </div>
+                        </a>
+                        <h3 class="t_capitalize uk-margin-small"><a href="http://www.mooban.cn/know/search-htm-username-qingsh.html" target="_blank" class="b" rel="nofollow" title="浏览 Qingsh 的问题" data-uk-tooltip="{pos:'top',animation:true}">魔芋</a></h3>
+                        <p class="uk-margin-small uk-text-muted"><a href="http://www.mooban.cn/know/search-htm-username-qingsh.html" target="_blank" class="g" rel="nofollow" title="浏览 Qingsh 的问题" data-uk-tooltip="{pos:'top',animation:true}">Web工程师</a></p>
+                    </div>
+                    <hr>
+                    <h3 class="uk-panel-title list_cat uk-text-left f_blue"><i class="uk-icon-user"></i> 发布者资料</h3>
+                    <ul class="uk-list uk-list-line uk-text-left">
+                        <li class="list_cat"><i class="uk-icon-adjust mb-a"></i> <b>性别:</b> 帅哥 </li>
+                        <li class="list_cat"><i class="uk-icon-map-marker mb-a"></i> <b>&nbsp;地区:</b> 北京</li>
+                        <li class="list_cat"><i class="uk-icon-vimeo-square mb-a"></i> <b>认证:</b>
+                            &nbsp;<i class="uk-text-success uk-icon-envelope-square mb-as" title="通过邮箱认证" data-uk-tooltip="{pos:'bottom',animation:true}"></i>                                                        </li>
+                    </ul>
+                    <hr>
+                    <h3 class="uk-panel-title list_cat uk-text-left f_blue"><i class="uk-icon-heart  mb-a"></i> 问题相关属性</h3>
+                    <ul class="uk-list uk-list-line uk-text-left">
+                        <li class="list_cat"><i class="uk-icon-clock-o mb-a"></i> <b>问题状态:</b>
+                            <i class="uk-icon-question-circle uk-text-warning" title="待解决" data-uk-tooltip="{pos:'right',animation:true}"></i> 待解决                    </li><li class="list_cat"><i class="uk-icon-database mb-a"></i> <b>悬赏魔豆:</b> <img src="http://www.mooban.cn/skin/moob/image/ico_reward.gif" align="absmiddle">0 粒</li>
+                        <li class="list_cat"><i class="uk-icon-comments-o mb-a"></i> <b>回答数量: </b>2 人</li>
+                        <li class="list_cat"><i class="uk-icon-calendar mb-a"></i> <b>添加日期: </b>2017-03-08 22:23</li>
+                        <li class="list_cat"><i class="uk-icon-calendar-o mb-a"></i> <b>问题期限: </b> 离问题结束还有694天</li>
+                    </ul>
+                    <hr>
+                    <h3 class="uk-panel-title list_cat uk-text-left f_blue"><i class="uk-icon-tags mb-a"></i> 问答分类</h3>
+                    <ul class="uk-list uk-list-line uk-text-left">
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;50条</span><a href="http://www.mooban.cn/know/dt-c81-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>Destoon</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;3条</span><a href="http://www.mooban.cn/know/app-c82-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>AppCan</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;3条</span><a href="http://www.mooban.cn/know/ec-c83-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>ECShop</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;1条</span><a href="http://www.mooban.cn/know/dede-c84-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>DeDeCMS</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;1条</span><a href="http://www.mooban.cn/know/api-c85-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>APICloud</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;0条</span><a href="http://www.mooban.cn/know/ecm-c86-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>ECMobile</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;2条</span><a href="http://www.mooban.cn/know/ect-c94-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>ECTouch</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;1条</span><a href="http://www.mooban.cn/know/dz-c88-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>Discuz</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;1条</span><a href="http://www.mooban.cn/know/pw-c91-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>PHPWind</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;3条</span><a href="http://www.mooban.cn/know/phome-c89-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>帝国CMS</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;5条</span><a href="http://www.mooban.cn/know/web-c92-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>WebAPP</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;0条</span><a href="http://www.mooban.cn/know/wp-c87-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>WordPress</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;1条</span><a href="http://www.mooban.cn/know/pg-c93-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>PhoneGap</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;4条</span><a href="http://www.mooban.cn/know/weixin-c95-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>微信公众号</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;3条</span><a href="http://www.mooban.cn/know/baidu-c96-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>百度直达号</span></a></li>
+                        <li class="list_cat"><span class="uk-float-right px12 f_gray">&nbsp;10条</span><a href="http://www.mooban.cn/know/other-c90-1.html" target="_blank" class="b"><i class="uk-icon-tag mb-a"></i> <span>其他问题</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-medium-3-4">
+                <div class="uk-panel uk-panel-box">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="http://www.mooban.cn/">首页</a></li>
+                        <li><a href="http://www.mooban.cn/know/">问答</a></li>
+                        <li class="uk-active"><b><a href="http://www.mooban.cn/know/other-c90-1.html">其他问题</a></b></li>
+                    </ul>
+                    <div class="uk-panel-badge uk-badge uk-badge-notification list_cat" data-uk-tooltip="{pos:'left',offset:5,animation:true}" title="浏览次数"><i class="uk-icon-eye mb-a"></i> 394</div>
+                    <article class="uk-article">
+                        <h1 class="uk-article-title mb-tit-left mb-a" id="title">你这个魔工坊是用哪个程序做的？</h1>
+                        <hr>
+                        <div id="question"><p>你这个魔工坊是用哪个程序做的？</p></div>
+                        <div class="b10"></div>
+                    </article>
+
+                    <p class="uk-text-center">
+                        <a id="answer_btn" href="#answer" class="uk-button uk-button-primary f_white list_cat" style=""><i class="uk-icon-comment mb-a"></i> 我来回答</a>&nbsp;<a href="javascript:SendFav()" class="uk-button uk-button-primary f_white list_cat"><i class="uk-icon-star mb-a"></i> 加入收藏</a>&nbsp;<a href="http://www.mooban.cn/know/search.php" target="_blank" class="uk-button uk-button-primary f_white list_cat"><i class="uk-icon-search mb-a"></i> 搜索问答</a>&nbsp;<a href="http://www.mooban.cn/member/my.php?mid=10&amp;cid=90&amp;action=add" target="_blank" class="uk-button uk-button-primary f_white list_cat"><i class="uk-icon-question-circle mb-a"></i> 我有问题</a>
+                    </p>
+                    <div>
+                        <a name="answer"></a>
+
+                        <div class="uk-grid" data-uk-grid-margin>
+                            <div class="uk-width-1-1">
+                                <div id="destoon_answer">
+                                    <div class="">
+                                        <div class="">
+                                            <iframe src="" name="send" id="send" style="display:none;"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="b10"></div>
+                                    <a name="top"></a>
+                                    <div id="destoon_answers">
+                                        <article class="uk-comment">
+                                            <header class="uk-comment-header thumb_hover">
+                                                <img class="uk-comment-avatar uk-border-circle  mb-a" src="http://www.mooban.cn/api/avatar/show.php?username=&amp;size=large" width="50" height="50" alt="魔工坊">
+                                                <h4 class="uk-comment-title" id="u_183">
+                                                    匿名
+                                                </h4>
+                                                <div class="uk-comment-meta">2017-04-05 11:28                                        </div>
+                                            </header>
+                                            <div class="uk-comment-body" id="a_183">
+                                                <p>不知道是 是 是<br/></p>        </div>
+                                        </article>
+                                        <a name="last"></a>    <div class="b10"></div>    <article class="uk-comment">
+                                        <header class="uk-comment-header thumb_hover">
+                                            <img class="uk-comment-avatar uk-border-circle  mb-a" src="http://www.mooban.cn/api/avatar/show.php?username=&amp;size=large" width="50" height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title" id="u_185">
+                                                匿名
+                                            </h4>
+                                            <div class="uk-comment-meta">2017-07-29 17:12                                        </div>
+                                        </header>
+                                        <div class="uk-comment-body" id="a_185">
+                                            <p>destoon</p>        </div>
+                                    </article>
+                                    </div>
+                                    <div class="b10"></div>
+                                    <div>
+                                        <div id="choose_form" >
+                                            <div class="uk-panel uk-panel-box">
+                                                <h3 class="uk-panel-title"><i class="uk-icon-heart"></i> 采纳答案</h3>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <h3 class="uk-panel-title"><i class="uk-icon-user"></i>  <span id="choose_u"></span></h3>
+                                                    <div id="choose_a"></div>
+                                                </div>
+                                                <form method="post" action="answer.php" target="_top" onsubmit="return choose_check();" class="uk-form">
+                                                    <input type="hidden" name="aid" id="aid" value="0"/>
+                                                    <input type="hidden" name="action" value="choose"/>
+                                                    <input type="hidden" name="itemid" value="127"/>
+                                                    <table class="uk-table">
+                                                        <tr>
+                                                            <td align="right" valign="top" class="px14">感谢语或评论：</td>
+                                                            <td><textarea rows="3" name="thx" id="thx_content" class="uk-width-1-1" placeholder="请输入谢语">谢谢大神，感激不尽</textarea>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right"  class="px14">额外奖励：</td>
+                                                            <td>
+                                                                <select name="credit" id="choose_credit">
+                                                                    <option value="0">0</option>
+                                                                    <option value="5">5</option>                                                                <option value="10">10</option>                                                                <option value="15">15</option>                                                                <option value="20">20</option>                                                                <option value="30">30</option>                                                                <option value="50">50</option>                                                                <option value="80">80</option>                                                                <option value="100">100</option>                                                            </select>
+                                                                <span class="f_gray">如果您对这一回答非常满意,您可以选择给回答者额外的奖励</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td> </td>
+                                                            <td>
+                                                                <input type="submit" value="确 认" class="uk-button uk-button-primary f_white"/>
+                                                                <input type="button" value="取 消" class="uk-button uk-button-success f_white" onclick="choose_cancel();"/>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="" style="">
+                                    <div class="uk-panel uk-panel-box" style="">
+                                        <h3 class="uk-panel-title"><i class="uk-icon-briefcase"></i> 我来回答</h3>
+                                        <form method="post" action="answer.php" target="send" id="dform" onsubmit="return check();" class="uk-form" style="">
+                                            <input type="hidden" name="items" value="2">
+                                            <input type="hidden" name="itemid" value="127">
+                                            <div class="px14" style="">
+                                                <table class="uk-table" style="">
+                                                    <tbody style=""><tr style="">
+                                                        <td align="right" width="100">答案内容：</td>
+                                                        <td style=""><textarea name="content" id="content" style="display:none;"></textarea>
+                                                            <script type="text/javascript" charset="utf-8" src="http://www.mooban.cn/api/ueditor/ueditor.config.js"></script>
+                                                            <script type="text/javascript" charset="utf-8" src="http://ueditor.baidu.com/ueditor/ueditor.all.min.js"> </script>
+                                                            <link rel="stylesheet" type="text/css" href="http://www.mooban.cn/skin/moob/scroll.css">
+                                                            <div style="max-height: 253px; overflow: auto;">
+                                                                <div id="editor" class="edui-default" style="width: 99.8%;"><div id="edui1" class="edui-editor  edui-default" style="width: 99.8%; z-index: 999;"><div id="edui1_toolbarbox" class="edui-editor-toolbarbox edui-default" style=""><div id="edui1_toolbarboxouter" class="edui-editor-toolbarboxouter edui-default"><div class="edui-editor-toolbarboxinner edui-default"><div id="edui2" class="edui-toolbar   edui-default" onselectstart="return false;" onmousedown="return $EDITORUI[&quot;edui2&quot;]._onMouseDown(event, this);" style="user-select: none;"><div id="edui3" class="edui-box edui-button edui-for-undo edui-default"><div id="edui3_state" onmousedown="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseOut(event, this);" class="edui-default edui-state-disabled"><div class="edui-button-wrap edui-default"><div id="edui3_body" unselectable="on" title="撤销" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui3&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui3&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui4" class="edui-box edui-button edui-for-redo edui-default"><div id="edui4_state" onmousedown="$EDITORUI[&quot;edui4&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui4&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui4&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui4&quot;].Stateful_onMouseOut(event, this);" class="edui-default edui-state-disabled"><div class="edui-button-wrap edui-default"><div id="edui4_body" unselectable="on" title="重做" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui4&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui4&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui5" class="edui-box edui-separator  edui-default"></div><div id="edui6" class="edui-box edui-button edui-for-bold edui-default"><div id="edui6_state" onmousedown="$EDITORUI[&quot;edui6&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui6&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui6&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui6&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui6_body" unselectable="on" title="加粗" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui6&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui6&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui7" class="edui-box edui-button edui-for-italic edui-default"><div id="edui7_state" onmousedown="$EDITORUI[&quot;edui7&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui7&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui7&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui7&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui7_body" unselectable="on" title="斜体" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui7&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui7&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui8" class="edui-box edui-button edui-for-underline edui-default"><div id="edui8_state" onmousedown="$EDITORUI[&quot;edui8&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui8&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui8&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui8&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui8_body" unselectable="on" title="下划线" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui8&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui8&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui9" class="edui-box edui-button edui-for-fontborder edui-default"><div id="edui9_state" onmousedown="$EDITORUI[&quot;edui9&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui9&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui9&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui9&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui9_body" unselectable="on" title="字符边框" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui9&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui9&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui10" class="edui-box edui-button edui-for-strikethrough edui-default"><div id="edui10_state" onmousedown="$EDITORUI[&quot;edui10&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui10&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui10&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui10&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui10_body" unselectable="on" title="删除线" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui10&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui10&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui11" class="edui-box edui-button edui-for-removeformat edui-default"><div id="edui11_state" onmousedown="$EDITORUI[&quot;edui11&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui11&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui11&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui11&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui11_body" unselectable="on" title="清除格式" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui11&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui11&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui12" class="edui-box edui-button edui-for-blockquote edui-default"><div id="edui12_state" onmousedown="$EDITORUI[&quot;edui12&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui12&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui12&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui12&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui12_body" unselectable="on" title="引用" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui12&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui12&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui13" class="edui-box edui-button edui-for-pasteplain edui-default"><div id="edui13_state" onmousedown="$EDITORUI[&quot;edui13&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui13&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui13&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui13&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-button-wrap edui-default"><div id="edui13_body" unselectable="on" title="纯文本粘贴模式" class="edui-button-body edui-default" onmousedown="return $EDITORUI[&quot;edui13&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui13&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div></div></div></div><div id="edui14" class="edui-box edui-separator  edui-default"></div><div id="edui15" class="edui-box edui-splitbutton edui-for-forecolor edui-default edui-colorbutton"><div title="字体颜色" id="edui15_state" onmousedown="$EDITORUI[&quot;edui15&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui15&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui15&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui15&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-splitbutton-body edui-default"><div id="edui15_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui15&quot;]._onButtonClick(event, this);"><div class="edui-box edui-icon edui-default"></div><div id="edui15_colorlump" class="edui-colorlump"></div></div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui15&quot;]._onArrowClick();"></div></div></div></div><div id="edui18" class="edui-box edui-splitbutton edui-for-backcolor edui-default edui-colorbutton"><div title="背景色" id="edui18_state" onmousedown="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-splitbutton-body edui-default"><div id="edui18_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui18&quot;]._onButtonClick(event, this);"><div class="edui-box edui-icon edui-default"></div><div id="edui18_colorlump" class="edui-colorlump"></div></div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui18&quot;]._onArrowClick();"></div></div></div></div><div id="edui21" class="edui-box edui-menubutton edui-for-insertorderedlist edui-default"><div title="有序列表" id="edui21_state" onmousedown="$EDITORUI[&quot;edui21&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui21&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui21&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui21&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-menubutton-body edui-default"><div id="edui21_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui21&quot;]._onButtonClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui21&quot;]._onArrowClick();"></div></div></div></div><div id="edui34" class="edui-box edui-menubutton edui-for-insertunorderedlist edui-default"><div title="无序列表" id="edui34_state" onmousedown="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-menubutton-body edui-default"><div id="edui34_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui34&quot;]._onButtonClick(event, this);"><div class="edui-box edui-icon edui-default"></div></div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui34&quot;]._onArrowClick();"></div></div></div></div><div id="edui41" class="edui-box edui-combox edui-for-fontsize edui-default"><div title="字号" id="edui41_state" onmousedown="$EDITORUI[&quot;edui41&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui41&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui41&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui41&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-combox-body edui-default"><div id="edui41_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui41&quot;]._onButtonClick(event, this);">16px</div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui41&quot;]._onArrowClick();"></div></div></div></div><div id="edui52" class="edui-box edui-combox edui-for-insertcode edui-default"><div title="代码语言" id="edui52_state" onmousedown="$EDITORUI[&quot;edui52&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui52&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui52&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui52&quot;].Stateful_onMouseOut(event, this);" class="edui-default"><div class="edui-combox-body edui-default"><div id="edui52_button_body" class="edui-box edui-button-body edui-default" onclick="$EDITORUI[&quot;edui52&quot;]._onButtonClick(event, this);">代码语言</div><div class="edui-box edui-splitborder edui-default"></div><div class="edui-box edui-arrow edui-default" onclick="$EDITORUI[&quot;edui52&quot;]._onArrowClick();"></div></div></div></div></div></div></div><div id="edui1_toolbarmsg" class="edui-editor-toolbarmsg edui-default" style="display:none;"><div id="edui1_upload_dialog" class="edui-editor-toolbarmsg-upload edui-default" onclick="$EDITORUI[&quot;edui1&quot;].showWordImageDialog();">点击上传</div><div class="edui-editor-toolbarmsg-close edui-default" onclick="$EDITORUI[&quot;edui1&quot;].hideToolbarMsg();">x</div><div id="edui1_toolbarmsg_label" class="edui-editor-toolbarmsg-label edui-default"></div><div style="height:0;overflow:hidden;clear:both;" class="edui-default"></div></div><div id="edui1_message_holder" class="edui-editor-messageholder edui-default" style="top: 34px; z-index: 1000;"></div></div><div id="edui1_iframeholder" class="edui-editor-iframeholder edui-default" style="width: 100%; height: 180px; z-index: 999; overflow: hidden;"><iframe id="ueditor_0" width="100%" height="100%" frameborder="0" src="javascript:void(function(){document.open();document.write(&quot;<!DOCTYPE html><html xmlns='http://www.w3.org/1999/xhtml' class='view' ><head><style type='text/css'>.view{padding:0;word-wrap:break-word;cursor:text;height:90%;}
+body{margin:8px;font-family:sans-serif;font-size:16px;}p{margin:5px 0;}</style><link rel='stylesheet' type='text/css' href='http://www.mooban.cn/api/ueditor/themes/iframe.css'/></head><body class='view' ></body><script type='text/javascript'  id='_initialScript'>setTimeout(function(){editor = window.parent.UE.instants['ueditorInstant0'];editor._setup(document);},0);var _tmpScript = document.getElementById('_initialScript');_tmpScript.parentNode.removeChild(_tmpScript);</script></html>&quot;);document.close();}())"></iframe></div><div id="edui1_bottombar" class="edui-editor-bottomContainer edui-default"><table class="edui-default"><tbody class="edui-default"><tr class="edui-default"><td id="edui1_elementpath" class="edui-editor-bottombar edui-default"><div class="edui-editor-breadcrumb" onmousedown="return false;">元素路径: <span unselectable="on" onclick="$EDITORUI[&quot;edui1&quot;].editor.execCommand(&quot;elementpath&quot;, &quot;0&quot;);">body</span> &gt; <span unselectable="on" onclick="$EDITORUI[&quot;edui1&quot;].editor.execCommand(&quot;elementpath&quot;, &quot;1&quot;);">p</span></div></td><td id="edui1_wordcount" class="edui-editor-wordcount edui-default">字数统计</td><td id="edui1_scale" class="edui-editor-scale edui-default" style="display: none;"><div class="edui-editor-icon edui-default"></div></td></tr></tbody></table></div><div id="edui1_scalelayer" class="edui-default"></div></div></div>
+                                                            </div>
+                                                            <script type="text/javascript">
+                                                                ue = UE.getEditor('editor',{
+                                                                    maximumWords:1000,
+                                                                    toolbars: [[
+                                                                        'undo', 'redo', '|',
+                                                                        'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'removeformat',  'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist',
+                                                                        'fontsize', 'insertcode'
+                                                                    ]],
+                                                                    focus:true,
+                                                                    wordCountMsg:'魔工坊温馨提示：当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符',
+                                                                    codeMirrorJsUrl:"http://ueditor.baidu.com/ueditor/third-party/codemirror/codemirror.js",
+                                                                    codeMirrorCssUrl:"http://ueditor.baidu.com/ueditor/third-party/codemirror/codemirror.css"
+                                                                });
+                                                                function getContent() {
+                                                                    var arr = [];
+                                                                    arr.push(ue.getContent());
+                                                                    return arr;
+                                                                }
+                                                                ue.onblur=function(){
+                                                                    $("#content").val(getContent());
+                                                                }
+                                                            </script>
+                                                            <span id="dcontent" class="f_red px12"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" class="uk-text-middle">参考资料：</td>
+                                                        <td><input type="text" name="url" class="uk-form-width-large" id="url"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" class="uk-text-middle"><span class="f_red">*</span> 验证码：</td>
+                                                        <td class="px12"><div class="uk-form-icon">
+                                                            <i class="uk-icon-question-circle" id="dcaptcha"></i>
+                                                            <input autocomplete="off" maxlength="4" onkeyup="checkcaptcha_keyup(this.value);" class="uk-form-width-small" name="captcha" type="text" id="captcha" onfocus="showcaptcha(1);" placeholder="输入验证码" onblur="checkcaptcha(this.value);">&nbsp;<img src="http://www.mooban.cn/api/captcha.png.php?action=image" data-uk-tooltip="{pos:'right',animation:true}" title="验证码,看不清楚?请点击刷新<br/>字母不区分大小写" alt="魔工坊" align="absmiddle" id="captchapng" onclick="reloadcaptcha();" style="cursor: pointer; height: 30px;">
+                                                        </div>
+                                                            <span id="dcaptcha" class="f_red"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="uk-text-middle" align="right">立即回答：</td>
+                                                        <td class="uk-text-middle">
+                                                            <input type="submit" name="submit" value="提交答案" class="uk-button uk-button-primary f_white">&nbsp;&nbsp;
+                                                            <a href="http://www.mooban.cn/know/faq.php#credit" target="_blank"><i class="uk-icon-database"></i> 查看魔豆规则</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> </td>
+                                                        <td class="px14 f_gray">
+                                                            登录后回答可以获得魔豆奖励，并可以查看和管理所有的回答。<a href="http://www.mooban.cn/member/login.php" target="_top">登录</a> | <a href="http://www.mooban.cn/member/register.php" target="_top" "="">注册</a><br>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+                                            </div>
+                                            <textarea name="editorValue" id="ueditor_textarea_editorValue" style="display: none;"></textarea></form>
+                                    </div>
+                                </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b20"></div>
+    <!--页脚部分-->
+    <div class="footer" data-uk-grid-margin="">
+
+        <div class="uk-container uk-container-center uk-grid-margin">
+            <h6 class="uk-text-center">
+                <a href="http://www.mooban.cn/" class="b">网站首页</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/index.html">关于我们</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/contact.html">联系方式</a>
+                | <a href="http://www.mooban.cn/sitemap/" class="b" target="_blank">网站地图</a>
+                | <a href="http://www.mooban.cn/link/" class="b" target="_blank">友情链接</a>
+                | <a href="http://www.mooban.cn/about/money.html" class="b" target="_blank">新手上路</a>
+                | <a href="http://ad.mooban.cn/" class="b" target="_blank">广告招商</a> | <a
+                    href="http://guestbook.mooban.cn/" class="b" target="_blank">网站留言</a> | <a
+                    href="http://www.mooban.cn/feedback/" class="b" target="_blank">产品反馈</a> | <a
+                    href="http://rss.mooban.cn/" class="b" target="_blank">RSS订阅</a> | <a
+                    href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" class="b" target="_blank"
+                    rel="nofollow">蜀ICP备13007465号-2</a>
+                <p class="uk-margin-small">
+                    © 2015 - 2018 Mooban.Cn All Rights Reserved<span class="uk-hidden-small am-show-md-up"> | <a
+                        href="http://www.mooban.cn/" class="b">魔工坊</a>，打造专业建站资源分享平台！</span></p>
+                <p class="uk-hidden-small">
+                    <a href="http://www.miibeian.gov.cn/" target="_blank" title="备案查询"
+                       data-uk-tooltip="{pos:'left',animation:true}" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/1.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>&nbsp;&nbsp;
+                    <a href="http://webscan.360.cn/index/checkwebsite/url/www.mooban.cn" target="_blank" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/common/360.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>&nbsp;&nbsp;
+                    <a href="http://www.cdnet110.com/index.php" target="_blank"
+                       data-uk-tooltip="{pos:'right',animation:true}" title="成都网警" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/4.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>
+                </p>
+            </h6>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

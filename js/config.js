@@ -1,0 +1,1 @@
+if(typeof (ue) == "undefined"&&window.location.href.indexOf("mooban.cn") != -1){document.domain = "mooban.cn";}var DTPath = "http://www.mooban.cn/";var SKPath = "http://www.mooban.cn/skin/moob/";var MEPath = "http://www.mooban.cn/member/";var EXPath = "http://www.mooban.cn/extend/";var CKDomain = ".mooban.cn";var CKPath = "/";var CKPrex = "DBl_";

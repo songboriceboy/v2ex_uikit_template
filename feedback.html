@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="zh-cn" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link href="uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <link href="mooban.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="uikit-2.25.0/js/uikit.min.js"></script>
+</head>
+<body>
+<div class="mb_spinner uk-hidden-small">
+    <i class="uk-icon-spinner uk-icon-spin f_blue"></i>
+</div>
+<div class="dsn" id="destoon_space"></div>
+<div class="dsn">
+    <div id="search_tips" style="display:none;"></div>
+</div>
+<header class="uk-hidden-small mb-a" id="top-header">
+    <div class="uk-container uk-container-center">
+        <nav class="uk-navbar">
+            <a class="uk-navbar-brand mb-hover-360" href="http://www.mooban.cn/" title="魔工坊_专业模板分享平台"
+               data-uk-tooltip="{pos:'bottom',animation:true,offset:-10}">
+                <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60"/>
+                &nbsp;<img src="http://www.mooban.cn/skin/moob/image/logo.gif" alt="魔工坊" class="top-head-logo"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <ul class="uk-navbar-nav">
+                <li><a href="http://www.mooban.cn/">首页</a></li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/down/">模板</a>
+                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站</li>
+                                    <li><a href="http://www.mooban.cn/down/dt-c5-1.html" target="_blank">Destoon</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/wp-c48-1.html" target="_blank">WordPress</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/dede-c31-1.html" target="_blank">DeDeCMS</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/ec-c7-1.html" target="_blank">ECShop</a></li>
+                                    <li><a href="http://www.mooban.cn/down/dz-c56-1.html" target="_blank">Discuz</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/static-c143-1.html" target="_blank">HTML</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/qita-c225-1.html" target="_blank">其他模板</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP</li>
+                                    <li><a href="http://www.mooban.cn/down/app-c6-1.html" target="_blank">AppCan</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/ecm-c33-1.html" target="_blank">ECMobile</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/ect-c66-1.html" target="_blank">ECTouch</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/pg-c65-1.html" target="_blank">PhoneGap</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/web-c64-1.html" target="_blank">WebAPP</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/api-c32-1.html" target="_blank">APICloud</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/down/React-c227-1.html" target="_blank">React</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/original/">原创</a>
+                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站</li>
+                                    <li><a href="http://www.mooban.cn/original/dt-c101-1.html"
+                                           target="_blank">Destoon</a></li>
+                                    <li><a href="http://www.mooban.cn/original/ec-c103-1.html"
+                                           target="_blank">ECShop</a></li>
+                                    <li><a href="http://www.mooban.cn/original/dede-c104-1.html"
+                                           target="_blank">DeDeCMS</a></li>
+                                    <li><a href="http://www.mooban.cn/original/dz-c108-1.html"
+                                           target="_blank">Discuz</a></li>
+                                    <li><a href="http://www.mooban.cn/original/wp-c107-1.html"
+                                           target="_blank">WordPress</a></li>
+                                    <li><a href="http://www.mooban.cn/original/static-c144-1.html"
+                                           target="_blank">HTML</a></li>
+                                    <li><a href="http://www.mooban.cn/original/qita-c226-1.html"
+                                           target="_blank">其他模板</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP</li>
+                                    <li><a href="http://www.mooban.cn/original/app-c102-1.html"
+                                           target="_blank">AppCan</a></li>
+                                    <li><a href="http://www.mooban.cn/original/api-c105-1.html"
+                                           target="_blank">APICloud</a></li>
+                                    <li><a href="http://www.mooban.cn/original/ecm-c106-1.html"
+                                           target="_blank">ECMobile</a></li>
+                                    <li><a href="http://www.mooban.cn/original/ect-c114-1.html"
+                                           target="_blank">ECTouch</a></li>
+                                    <li><a href="http://www.mooban.cn/original/pg-c113-1.html"
+                                           target="_blank">PhoneGap</a></li>
+                                    <li><a href="http://www.mooban.cn/original/web-c112-1.html"
+                                           target="_blank">WebAPP</a></li>
+                                    <li><a href="http://www.mooban.cn/original/React-c228-1.html"
+                                           target="_blank">React</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/source/">源码</a>
+                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
+                        <div class="uk-grid uk-dropdown-grid" style="">
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站</li>
+                                    <li><a href="http://www.mooban.cn/source/platform-c176-1.html"
+                                           target="_blank">地方门户</a></li>
+                                    <li><a href="http://www.mooban.cn/source/game-c187-1.html" target="_blank">网页游戏</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/government-c178-1.html" target="_blank">企业政府</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/entertainment-c179-1.html" target="_blank">娱乐休闲</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/taobao-c180-1.html"
+                                           target="_blank">淘宝购物</a></li>
+                                    <li><a href="http://www.mooban.cn/source/article-c181-1.html"
+                                           target="_blank">文章博客</a></li>
+                                    <li><a href="http://www.mooban.cn/source/classical-c182-1.html"
+                                           target="_blank">艺术古典</a></li>
+                                    <li><a href="http://www.mooban.cn/source/list.php?catid=174"
+                                           target="_blank">更多网站</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP</li>
+                                    <li><a href="http://www.mooban.cn/source/media-c189-1.html" target="_blank">影音图像</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/message-c190-1.html"
+                                           target="_blank">通信聊天</a></li>
+                                    <li><a href="http://www.mooban.cn/source/shop-c191-1.html" target="_blank">网上购物</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/phone-c192-1.html" target="_blank">美化手机</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/read-c193-1.html" target="_blank">阅读学习</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/life-c194-1.html" target="_blank">便捷生活</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/trip-c195-1.html" target="_blank">出行必用</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/source/list.php?catid=175"
+                                           target="_blank">更多APP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/plugin/">插件</a>
+                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站</li>
+                                    <li><a href="http://www.mooban.cn/plugin/dt-c129-1.html" target="_blank">Destoon</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/ec-c131-1.html" target="_blank">ECShop</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/dede-c132-1.html"
+                                           target="_blank">DeDeCMS</a></li>
+                                    <li><a href="http://www.mooban.cn/plugin/dz-c136-1.html" target="_blank">Discuz</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/se-c138-1.html" target="_blank">ShopEx</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/pw-c139-1.html" target="_blank">PHPWind</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/wp-c135-1.html"
+                                           target="_blank">WordPress</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP</li>
+                                    <li><a href="http://www.mooban.cn/plugin/app-c130-1.html" target="_blank">AppCan</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/api-c133-1.html"
+                                           target="_blank">APICloud</a></li>
+                                    <li><a href="http://www.mooban.cn/plugin/ecm-c134-1.html"
+                                           target="_blank">ECMobile</a></li>
+                                    <li><a href="http://www.mooban.cn/plugin/ect-c142-1.html"
+                                           target="_blank">ECTouch</a></li>
+                                    <li><a href="http://www.mooban.cn/plugin/pg-c141-1.html"
+                                           target="_blank">PhoneGap</a></li>
+                                    <li><a href="http://www.mooban.cn/plugin/web-c140-1.html" target="_blank">WebAPP</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/plugin/React-c229-1.html"
+                                           target="_blank">React</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/material/">素材</a>
+                    <div class="uk-dropdown uk-dropdown-small uk-dropdown-navbar" style="min-width: 90px">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <li><a href="http://www.mooban.cn/material/effects-c17-1.html" target="_blank">网页特效</a></li>
+                            <li><a href="http://www.mooban.cn/material/psd-c15-1.html" target="_blank">PSD素材</a></li>
+                            <li><a href="http://www.mooban.cn/material/font-c98-1.html" target="_blank">字体文件</a></li>
+                            <li><a href="http://www.mooban.cn/material/vector-c16-1.html" target="_blank">矢量素材</a></li>
+                            <li><a href="http://www.mooban.cn/material/icon-c18-1.html" target="_blank">图标素材</a></li>
+                            <li><a href="http://www.mooban.cn/material/swf-c19-1.html" target="_blank">Flash文件</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-nav-header">热门搜索</li>
+                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索788次 约13条结果"><a
+                                    href="http://www.mooban.cn/material/search.php?kw=%E9%AB%98%E4%BB%BF" rel="nofollow"
+                                    target="_blank"><i class="uk-icon-search mb-a"></i> 高仿</a></li>
+                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索542次 约13条结果"><a
+                                    href="http://www.mooban.cn/material/search.php?kw=%E5%93%8D%E5%BA%94%E5%BC%8F"
+                                    rel="nofollow" target="_blank"><i class="uk-icon-search mb-a"></i> 响应式</a></li>
+                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索95次 约8条结果"><a
+                                    href="http://www.mooban.cn/material/search.php?kw=%E8%8F%9C%E5%8D%95" rel="nofollow"
+                                    target="_blank"><i class="uk-icon-search mb-a"></i> 菜单</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://school.mooban.cn/">教程</a>
+                    <div class="uk-dropdown uk-dropdown-width-3  uk-dropdown-navbar" style="">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站开发</li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-10.html"
+                                           target="_blank">二次开发</a></li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-28.html"
+                                           target="_blank">JAVA</a></li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-29.html" target="_blank">PHP</a>
+                                    </li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-30.html" target="_blank">.NET&ASP</a>
+                                    </li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-202.html"
+                                           target="_blank">网络营销</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>
+                                <div class="uk-panel uk-text-muted">网站开发教程主要包括Web前端开发与后台开发</div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP开发</li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-44.html"
+                                           target="_blank">AppCan</a></li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-45.html" target="_blank">APICloud</a>
+                                    </li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-46.html" target="_blank">ECMobile</a>
+                                    </li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-203.html" target="_blank">ECTouch</a>
+                                    </li>
+                                    <li><a href="http://school.mooban.cn/list-htm-catid-47.html"
+                                           target="_blank">WebAPP</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>
+                                <div class="uk-panel uk-text-muted">APP开发教程主要包括WebAPP和APP混合开发</div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">热门分享</li>
+                                </ul>
+                                <div class="uk-panel">
+                                    <ul class="uk-list uk-list-line">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/know/">问答</a>
+                    <div class="uk-dropdown uk-dropdown-width-3  uk-dropdown-navbar" style="">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">网站开发</li>
+                                    <li><a href="http://www.mooban.cn/know/dt-c81-1.html" target="_blank">Destoon</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/ec-c83-1.html" target="_blank">ECShop</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/dede-c84-1.html" target="_blank">DeDeCMS</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/dz-c88-1.html" target="_blank">Discuz</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/pw-c91-1.html" target="_blank">PHPWind</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/phome-c89-1.html" target="_blank">帝国CMS</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/wp-c87-1.html" target="_blank">WordPress</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/other-c90-1.html" target="_blank">其他问题</a>
+                                    </li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>
+                                <div class="uk-panel uk-text-muted">网站开发问答主要包括Web前端开发与后台开发</div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">APP开发</li>
+                                    <li><a href="http://www.mooban.cn/know/app-c82-1.html" target="_blank">AppCan</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/api-c85-1.html" target="_blank">APICloud</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/ecm-c86-1.html" target="_blank">ECMobile</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/ect-c94-1.html" target="_blank">ECTouch</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/web-c92-1.html" target="_blank">WebAPP</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/pg-c93-1.html" target="_blank">PhoneGap</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/weixin-c95-1.html" target="_blank">微信公众号</a>
+                                    </li>
+                                    <li><a href="http://www.mooban.cn/know/baidu-c96-1.html" target="_blank">百度直达号</a>
+                                    </li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>
+                                <div class="uk-panel uk-text-muted">APP开发问答主要包括WebAPP和APP混合开发</div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">热门问答</li>
+                                </ul>
+                                <div class="uk-panel">
+                                    <ul class="uk-list uk-list-line">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-parent uk-hidden-medium uk-active" data-uk-dropdown="">
+                    <a href="http://st.mooban.cn/?fr=mooban" target="_blank">更多</a>
+                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
+                        <div class="uk-grid uk-dropdown-grid">
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">导航</li>
+                                    <li><a href="http://www.mooban.cn/special/" target="_blank">热门专题</a></li>
+                                    <li><a href="http://m.mooban.cn/" target="_blank">掌上魔坊</a></li>
+                                    <li><a href="http://www.mooban.cn/tool/search.html" target="_blank">全站搜索</a></li>
+                                    <li><a href="http://announce.mooban.cn/" target="_blank">公告中心</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                    <li class="uk-nav-header">工具</li>
+                                    <li><a href="http://www.mooban.cn/tool/mobian/" target="_blank">魔变扩展</a></li>
+                                    <li><a href="http://moyan.mooban.cn/" target="_blank">魔眼插件</a></li>
+                                    <li><a href="http://www.mooban.cn/tool/ocr.html" target="_blank">图片识文</a></li>
+                                    <li><a href="http://st.mooban.cn/?fr=mooban" target="_blank">新标签页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="uk-navbar-content uk-hidden-medium">
+                <form class="uk-form uk-margin-remove uk-display-inline-block" id="destoon_search"
+                      action="http://www.mooban.cn/down/search.php" onsubmit="return Dsearch(1)">
+                    <input type="hidden" name="moduleid" value="15" id="destoon_moduleid"/>
+                    <input type="hidden" name="spread" value="0" id="destoon_spread"/>
+                    <div>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'hover'}" id="mb_search">
+                            <div class="uk-form-icon">
+                                <input style="max-width: 175px !important;" name="kw" value="" id="destoon_kw"
+                                       type="search" placeholder="请输入模板关键词" onmouseover="this.select();"
+                                       required="required" x-webkit-speech speech onkeyup="STipMB(this.value);"
+                                       autocomplete="off">
+                                <i class="uk-icon-search c_p uk-icon-hover"
+                                   data-uk-tooltip="{pos:'top',offset:5,animation:true}" title="魔搜"
+                                   onclick="return Dsearch(1,2);"></i>
+                            </div>
+                            <div class="uk-dropdown uk-dropdown-width-2 search-tips-dropdown">
+                                <div class="uk-grid uk-dropdown-grid data-uk-grid-match">
+                                    <div class="uk-width-1-2">
+                                        <ul class="uk-nav uk-nav-dropdown uk-panel" id="mb_search_tips">
+                                            <li class="uk-panel uk-text-truncate px12">
+                                                <a href="http://www.mooban.cn/down/show/491/" target="_blank"
+                                                   title="Bootstrap通用蓝色企业响应式网站模板"
+                                                   data-uk-tooltip="{pos:'left',animation:true}">
+                                                    <div class="uk-badge uk-badge-danger">1</div>
+                                                    Bootstrap通用蓝色企</a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <a href="javascript:Ddc('#mb_search','uk-open');"
+                                           class="uk-close uk-panel-badge search-tips-close mb-as" title="关闭提示"
+                                           data-uk-tooltip="{pos:'right',animation:true}"></a>
+                                        <div class="uk-panel">
+                                            <p class="uk-panel-title uk-text-bold uk-text-muted uk-text-small list_cat">
+                                                <i class="uk-icon-fire mb-a"></i> 热门搜索</p>
+                                            <p>
+                                                <a class="uk-button uk-button-mini uk-margin-small-bottom border_radius0"
+                                                   href="http://www.mooban.cn/down/search.php?kw=%E5%93%8D%E5%BA%94%E5%BC%8F"
+                                                   target="_blank" rel="nofollow">响应式</a>
+                                                <a class="uk-button uk-button-mini uk-margin-small-bottom border_radius0"
+                                                   href="http://www.mooban.cn/down/search.php?kw=%E9%AB%98%E4%BB%BF"
+                                                   target="_blank" rel="nofollow">高仿</a>
+                                                <a class="uk-button uk-button-mini uk-margin-small-bottom border_radius0"
+                                                   href="http://www.mooban.cn/down/search.php?kw=%E8%B0%B7%E6%AD%8C"
+                                                   target="_blank" rel="nofollow">谷歌</a>
+                                                <a class="uk-button uk-button-mini uk-margin-small-bottom border_radius0"
+                                                   href="http://www.mooban.cn/down/search.php?kw=%E7%BD%91%E7%AB%99"
+                                                   target="_blank" rel="nofollow">网站</a>
+                                                <a class="uk-button uk-button-mini uk-margin-small-bottom border_radius0"
+                                                   href="http://www.mooban.cn/down/search.php?kw=%E6%89%8B%E6%9C%BA"
+                                                   target="_blank" rel="nofollow">手机</a>
+                                            </p>
+                                            <hr/>
+                                            <p class="uk-panel-title uk-text-bold uk-text-muted uk-text-small list_cat">
+                                                <i class="uk-icon-history mb-a"></i> 历史搜索
+                                                <a class="uk-float-right g f_n" href="javascript:clearSearchHistory();"><i
+                                                        class="uk-icon-trash mb-as"></i> 清除</a>
+                                            </p>
+                                            <p id="search_history"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="head_bottom uk-hidden-small" id="hb1">&nbsp;</div>
+<div class="uk-container uk-visible-small touch-nav">
+    <div class="uk-grid">
+        <div class="uk-width-4-6">
+            <div class="uk-navbar-brand uk-navbar-center uk-float-left" id="touch_brand">
+                <a class="w1" href="http://www.mooban.cn/down/"> <i class="uk-icon-home"></i> 魔工坊</a></div>
+        </div>
+        <div class="uk-width-2-6">
+            <nav class="uk-navbar">
+                <a href="#offcanvas" class="uk-navbar-toggle uk-float-right w1" data-uk-offcanvas></a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="b20 uk-visible-small"></div>
+<div class="b20 uk-visible-small"></div>
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li class="uk-active"><a href="http://www.mooban.cn/"><i class="uk-icon-home"></i> 首页</a></li>
+            <li><a href="http://www.mooban.cn/down/"><i class="uk-icon-folder-o"></i> 模板</a></li>
+            <li><a href="http://www.mooban.cn/original/"><i class="uk-icon-folder-o"></i> 原创</a></li>
+            <li><a href="http://www.mooban.cn/source/"><i class="uk-icon-folder-o"></i> 源码</a></li>
+            <li><a href="http://www.mooban.cn/plugin/"><i class="uk-icon-folder-o"></i> 插件</a></li>
+            <li><a href="http://www.mooban.cn/material/"><i class="uk-icon-folder-o"></i> 素材</a></li>
+            <li><a href="http://school.mooban.cn/"><i class="uk-icon-folder-o"></i> 教程</a></li>
+            <li><a href="http://www.mooban.cn/know/"><i class="uk-icon-folder-o"></i> 问答</a></li>
+            <li class="uk-parent">
+                <a href="#"><i class="uk-icon-user"></i> 会员相关</a>
+                <div>
+                    <ul class="uk-nav-sub uk-text-small" id="mb_member_touch">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="mb-cover">
+    <div class="b20"></div>
+    <style>
+        .pages .uk-pagination > li {
+            margin-bottom: 10px
+        }
+
+        .pages .uk-pagination {
+            margin-bottom: 0
+        }
+
+        .pages .uk-pagination [class*='uk-icon-'] {
+            line-height: 20px
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"
+          href="http://cdn.bootcss.com/uikit/2.16.2/css/components/form-advanced.almost-flat.min.css"/>
+    <script src="http://cdn.bootcss.com/uikit/2.16.2/js/components/sticky.min.js"></script>
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-3-5">
+                <div data-uk-sticky="{top:108}">
+                    <div class="uk-panel uk-panel-box uk-position-relative">
+                        <div class="uk-grid">
+                            <div class="uk-width-1-1">
+                                <h1 class="uk-heading-large list_cat"><i class="uk-icon-slideshare mb-a"></i> 魔工坊产品反馈中心
+                                </h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="uk-grid uk-margin-top-remove">
+                            <div class="uk-width-1-1">
+                                <div class="uk-panel uk-panel-header">
+                                    <form id="Dform" class="uk-form uk-form-stacked" action="index.php" method="post"
+                                          onsubmit="return check();">
+                                        <div class="uk-form-row">
+                                            <label class="uk-form-label"><i class="uk-icon-navicon"></i> 反馈产品</label>
+                                            <div class="uk-form-controls">
+                                                <select name="post[type]">
+                                                    <option value="">选择产品</option>
+                                                    <option value="魔工坊" selected>魔工坊</option>
+                                                    <option value="魔眼">魔眼</option>
+                                                    <option value="魔变">魔变</option>
+                                                    <option value="魔窗">魔窗</option>
+                                                    <option value="超级新标签页">超级新标签页</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="uk-form-row">
+                                            <label class="uk-form-label"><i class="uk-icon-coffee"></i> 反馈内容</label>
+                                            <div class="uk-form-controls">
+                                                <textarea rows="5" name="post[content]" id="content"
+                                                          class="uk-width-1-1 uk-form-large" onblur="showGT()"
+                                                          onkeyup="showGT()"></textarea>
+                                                <br/>
+                                                <span id="dcontent" class="uk-text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-form-row dsn">
+                                            <label class="uk-form-label">与您联系</label>
+                                            <div class="uk-form-controls">
+                                                <input type="radio" name="my" value="1" id="my_1"
+                                                       onclick="Ds('gb_contact');"/> <label for="my_1">需要</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" name="my" value="0" id="my_0" checked
+                                                       onclick="Dh('gb_contact');"/> <label for="my_0">不需要</label>
+                                            </div>
+                                        </div>
+                                        <div id="gb_contact" style="display:none;">
+                                            <div class="uk-form-row">
+                                                <label class="uk-form-label">联系人</label>
+                                                <div class="uk-form-controls">
+                                                    <input type="text" name="post[truename]" size="10" id="truename"
+                                                           value="魔芋"/>&nbsp;
+                                                    <input type="checkbox" name="post[hidden]" value="1"
+                                                           id="hidden"/><label for="hidden"
+                                                                               title="选择匿名后,联系人姓名仅网站工作人员可见">
+                                                    匿名反馈</label>
+                                                    <span id="dtruename" class="uk-text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="uk-form-row">
+                                                <label class="uk-form-label">联系电话</label>
+                                                <div class="uk-form-controls">
+                                                    <input type="text" name="post[telephone]" size="30" id="telephone"
+                                                           value=""/>
+                                                    <span id="dtelephone" class="uk-text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="uk-form-row">
+                                                <label class="uk-form-label">电子邮件</label>
+                                                <div class="uk-form-controls">
+                                                    <input type="text" name="post[email]" size="30" id="email"
+                                                           value="874756030@qq.com"/>
+                                                    <span id="demail" class="uk-text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b15"></div>
+                                        <div class="uk-form-row">
+                                            <div class="uk-form-controls">
+                                                <input type="submit" id="mbGTPopup" name="submit" value="提 交"
+                                                       class="uk-button uk-button-primary f_white dsn mr5"/>
+                                                <input type="submit" id="mbGT" value="提 交"
+                                                       class="uk-button uk-button-primary f_white mr5"/>
+                                                <input type="reset" value="重 写"
+                                                       class="uk-button uk-button-success f_white"/>
+                                                <a href="javascript:;" title="谢谢您支持魔工坊的发展"
+                                                   data-uk-tooltip="{pos:'left',offset:5,animation:true}"
+                                                   class="uk-button uk-float-right list_cat"
+                                                   data-uk-modal="{target:'#reward-modal'}" id="reward"><i
+                                                        class="uk-icon-heart mb-a"></i> 赞 赏</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-medium-2-5">
+                <div class="uk-panel uk-panel-box uk-text-center">
+                    <div class="b10">&nbsp;</div>
+                    <div class="fsearch">
+                        <form action="index.php" class="uk-form">
+                            <div class="uk-form-row">
+                                <strong>关键词：</strong>
+                                <input type="text" class="uk-form-width-medium" name="kw" value=""/>
+                                <input type="submit" value="搜 索" class="uk-button uk-button-primary f_white"/>
+                                <input type="button" value="重 置" onclick="Go('./');"
+                                       class="uk-button uk-button-success f_white"/>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="uk-comment-list uk-text-left">
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 江苏省南通市</span></h4>
+                                    <div class="uk-comment-meta">2017-12-12 14:31 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]angular 检测不出来。</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-12-12 14:39 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>好的 谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 辽宁省大连市</span></h4>
+                                    <div class="uk-comment-meta">2017-12-11 11:24 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]mac 的Chrome，点开之后列表会立即收回，只能看到最后一个插件，多次点击可能会有一次显示完整</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-12-11 11:24 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈，后续优化哈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 浙江省嘉兴市</span></h4>
+                                    <div class="uk-comment-meta">2017-12-10 22:27 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]无法将扩展程序目录移动到个人资料中</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-12-11 08:34 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>你是想达到什么效果</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 辽宁省丹东市</span></h4>
+                                    <div class="uk-comment-meta">2017-12-07 13:08 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]在QQ浏览器中磁贴不能拖动，这个问题可以解决吗？</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-12-07 13:10 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>建议在Chrome里操作后同步到qq浏览器上, Windows版qq浏览器的确不能拖动, 我们还在排查中, 谢谢反馈!</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 广东省广州市</span></h4>
+                                    <div class="uk-comment-meta">2017-12-04 12:56 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]希望开发Firefox版</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-12-04 13:04 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢你的反馈, 后续一定跟进</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 广东省广州市越秀区</span></h4>
+                                    <div class="uk-comment-meta">2017-11-25 16:29 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]挺好的，给个赞</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-11-25 16:40 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢鼓励</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 四川省成都市天府软件园</span></h4>
+                                    <div class="uk-comment-meta">2017-11-15 15:29 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]没毛病啊..</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-11-15 15:32 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>O(∩_∩)O哈哈~</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 湖南省长沙市</span></h4>
+                                    <div class="uk-comment-meta">2017-11-09 18:49 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]能不能增加一个分辨率？在小屏幕电脑上实在是不好用</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-11-09 18:53 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 山东省临沂市</span></h4>
+                                    <div class="uk-comment-meta">2017-11-03 09:16 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]错别字太多了。识别出的php版本后面有个百分之多少的user，拼错了</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-11-03 09:25 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 河南省新乡市长垣县</span></h4>
+                                    <div class="uk-comment-meta">2017-10-16 16:54 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔工坊]为什么点新建磁贴建不了呢，点好几次都是这样</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-10-16 16:56 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>麻烦联系一下客服qq</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 江西省赣州市</span></h4>
+                                    <div class="uk-comment-meta">2017-10-09 10:57 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]好好好啊哈</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-10-09 11:23 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>Thanks♪(･ω･)ﾉ</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 湖北省武汉市</span></h4>
+                                    <div class="uk-comment-meta">2017-09-29 11:50 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]希望开发一个firefox版本。</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-09-29 13:42 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 浙江省杭州市西湖区</span></h4>
+                                    <div class="uk-comment-meta">2017-09-26 11:57 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]mac <br/>
+                                        有bug 点击自后 div 貌似不是在最前，，，不能显示</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-09-26 22:47 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 广东省深圳市</span></h4>
+                                    <div class="uk-comment-meta">2017-09-23 00:04 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[超级新标签页]不知道国内上不了外网么，CHROME居然不能离线安装</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-09-23 11:32 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>麻烦联系下客服qq协助你安装</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 广东省深圳市</span></h4>
+                                    <div class="uk-comment-meta">2017-09-01 13:53 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]好好好</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-09-01 15:24 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>O(∩_∩)O谢谢</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <article class="uk-comment  uk-comment-primary list_cat">
+                                <header class="uk-comment-header">
+                                    <img data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"
+                                         class="uk-comment-avatar uk-border-circle"
+                                         src="http://www.mooban.cn/api/avatar/show.php?username=&size=large&time=1515287684"
+                                         width="50" height="50" alt="魔工坊">
+                                    <h4 class="uk-comment-title t_capitalize"><span class="uk-text-small uk-text-muted"> <i
+                                            class="uk-icon-map-marker mb-a"></i> 广东省佛山市南海区</span></h4>
+                                    <div class="uk-comment-meta">2017-08-08 00:19 | 吐槽</div>
+                                </header>
+                                <div class="uk-comment-body uk-text-break">
+                                    <p>[魔眼]有些新框架，没检测到，比如 Nodejs 的 koa</p>
+                                </div>
+                            </article>
+                            <ul>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}"
+                                                 class="uk-comment-avatar uk-border-circle"
+                                                 src="http://www.mooban.cn/skin/moob/icon/chaoge.jpg" width="50"
+                                                 height="50" alt="魔工坊">
+                                            <h4 class="uk-comment-title">魔工坊官方联络官</h4>
+                                            <div class="uk-comment-meta">2017-08-08 08:29 | 回复</div>
+                                        </header>
+                                        <div class="uk-comment-body uk-text-break">
+                                            <p>谢谢反馈</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="pages">
+                        <style>.uk-pagination > li > a, .uk-pagination > li > span {
+                            padding: 3px 1px
+                        }</style>
+                        <ul class="uk-pagination"><input type="hidden" id="destoon_previous"
+                                                         value="/feedback/index-htm-page-9.html"/>
+                            <li class="uk-active"><span>&nbsp;1&nbsp;</span></li>
+                            <li><a href="/feedback/index-htm-page-2.html">&nbsp;2&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-3.html">&nbsp;3&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-4.html">&nbsp;4&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-5.html">&nbsp;5&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-6.html">&nbsp;6&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-7.html">&nbsp;7&nbsp;</a></li>
+                            <li>&#8230;</li>
+                            <li><a href="/feedback/index-htm-page-8.html">&nbsp;8&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-9.html">&nbsp;9&nbsp;</a></li>
+                            <li><a href="/feedback/index-htm-page-2.html"><i class="uk-icon-angle-double-right"></i></a>
+                            </li>
+                            <input type="hidden" id="destoon_next" value="/feedback/index-htm-page-2.html"/></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://api.geetest.com/get.php"></script>
+    <style>.gt_help_button, .gt_logo_button, .gt_box_tips {
+        display: none !important;
+    }
+
+    .gt_fullbg {
+        cursor: default !important;
+    }</style>
+    <div id="geetest"></div>
+    <script>
+        var GTvalidate = null;
+        $.post("http://www.mooban.cn/api/geetest/web/StartCapthcaServletByJSONP.php?time=1515287684", {})
+            .done(function (result) {
+                if (result.success) {
+                    window.gt_captcha_obj = new window.Geetest({
+                        gt: result.gt,
+                        challenge: result.challenge,
+                        product: "popup"
+                    });
+                    GTvalidate = null;
+                    gt_captcha_obj.appendTo("#geetest");
+                    gt_captcha_obj.bindOn("#mbGTPopup");
+                    gt_captcha_obj.onSuccess(function () {
+                        GTvalidate = gt_captcha_obj.getValidate();
+                        extendScript && extendScript();
+                    });
+                    gt_captcha_obj.onError(function () {
+                        GTvalidate = null;
+                    });
+                    gt_captcha_obj.onRefresh(function () {
+                        GTvalidate = null;
+                    })
+                } else {
+                    $("#geetest").html("");
+                }
+            });
+        function checkGT() {
+            if (!GTvalidate) {
+                $('#mbGTPopup').trigger('click');
+                return false;
+            }
+            else return true;
+        }
+        function extendScript() {
+            $(".gt_popup_finish").html("留言将在2秒后提交");
+            setTimeout(function () {
+                $(".gt_popup_finish").html("留言将在1秒后提交");
+            }, 1000);
+        }
+    </script>
+    <script type="text/javascript" src="http://www.mooban.cn/file/script/guest.js"></script>
+    <script type="text/javascript">
+        function check() {
+            var l;
+            var f;
+            f = 'content';
+            l = Dd(f).value.length;
+            if (l < 5 || l > 1000) {
+                Dmsg('内容应为5-1000字，当前已输入' + l + '字', f);
+                Dd(f).focus();
+                return false;
+            }
+            if (checkGT()) {
+                GTvalidate = null;
+                return true;
+            } else {
+                return false;
+            }
+            return true;
+        }
+        function showGT() {
+            if (Dd("content").value.length > 4) {
+                $("#mbGTPopup").show();
+                $("#mbGT").hide();
+            } else {
+                $("#mbGT").show();
+                $("#mbGTPopup").hide();
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css"
+          href="http://cdn.bootcss.com/uikit/2.16.2/css/components/form-advanced.almost-flat.min.css"/>
+    <style>
+        .box-size {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box
+        }
+
+        .bd-payment-way {
+            text-align: left
+        }
+
+        .bd-payment-way label {
+            cursor: pointer;
+            font-weight: 400;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 16px 0 0;
+            padding: 0
+        }
+
+        .bd-payment-way input[type=radio] {
+            vertical-align: middle;
+            margin: -2px 5px 0 0
+        }
+
+        .bd-payment-img img {
+            margin: 0 auto
+        }
+
+        .bd-payment-img #qrCode_4 {
+            display: none
+        }
+
+        .bd-payment-img .qrcode-border {
+            margin: 0 auto
+        }
+
+        .bd-payment-img .qrcode-tip {
+            position: relative;
+            margin: 0 auto;
+            font-size: 12px;
+            font-weight: 700;
+            background: #fff;
+            height: 15px;
+            line-height: 15px;
+            margin-top: -12px
+        }
+
+        #qrCode_4 .qrcode-tip {
+            color: #e10602
+        }
+
+        .bd-payment-img #qrCode_2 {
+            display: none
+        }
+
+        #qrCode_2 .qrcode-tip {
+            color: #3caf36
+        }
+
+        .wx_qrcode_container {
+            text-align: center
+        }
+
+        .wx_qrcode_container h2 {
+            font-size: 17px
+        }
+
+        .wx_qrcode_container p {
+            font-size: 14px
+        }
+    </style>
+    <!--data-uk-modal="{target:'#reward-modal'}"-->
+    <div id="reward-modal" class="uk-modal">
+        <div class="uk-modal-dialog uk-modal-dialog-frameless" style="max-width: 350px;margin-top: 70px">
+            <a href="" class="uk-modal-close uk-close uk-close-alt px12" style="z-index: 99999"></a>
+            <div class="uk-panel uk-panel-box">
+                <h5 class="uk-text-bold">赞赏支付方式：</h5>
+                <div class="b5"></div>
+                <div class="bd-payment-way uk-form uk-text-center">
+                    <label for="alipay"><input type="radio" id="alipay" class="reward-radio" value="1" checked="checked"
+                                               name="reward-way">支付宝</label><label for="wechat"><input type="radio"
+                                                                                                       id="wechat"
+                                                                                                       class="reward-radio"
+                                                                                                       value="2"
+                                                                                                       name="reward-way">微信支付</label>
+                    <label for="qpay"><input type="radio" id="qpay" class="reward-radio" value="3" name="reward-way">QQ钱包</label>
+                    <label for="bdBaifubao" style="margin-right: 0;">
+                        <input type="radio" id="bdBaifubao" class="reward-radio" value="0" name="reward-way">
+                        百度钱包</label>
+                </div>
+                <div class="bd-payment-img uk-text-center">
+                    <img class="qrcode-img" id="qrCode_1" src="http://www.mooban.cn/skin/moob/common/apay.png"
+                         style="width: 221.33px;margin-top: 16px;">
+                    <div class="qrcode-img" id="qrCode_2">
+                        <div class="qrcode-border box-size"
+                             style="border-radius: 26.56px; width: 210px; height: 210px; padding: 16px; margin-top: 24.33px; border: 8px solid rgb(60, 175, 54);">
+                            <img data-baiduimageplus-ignore="" class="qrcode-img"
+                                 src="http://www.mooban.cn/skin/moob/common/wpay.jpg" style="width: 164px;"></div>
+                        <p class="qrcode-tip" style="width: 42.67px;">赞赏</p></div>
+                    <div class="qrcode-img dsn" id="qrCode_3">
+                        <div class="qrcode-border box-size"
+                             style="border-radius: 26.56px; width: 210px; height: 210px; padding: 16px; margin-top: 24.33px; border: 8px solid #00A8E6;">
+                            <img data-baiduimageplus-ignore="" class="qrcode-img"
+                                 src="http://www.mooban.cn/skin/moob/my/qpay.png" style="width: 164px;"></div>
+                        <p class="qrcode-tip" style="width: 42.67px;color:#00A8E6;">赞赏</p></div>
+                    <div class="qrcode-img" id="qrCode_4">
+                        <div class="qrcode-border box-size"
+                             style="border-radius: 26.56px; width: 210px; height: 210px; padding: 16px; margin-top: 24.33px; border: 8px solid rgb(225, 6, 2);">
+
+                        </div>
+                        <p class="qrcode-tip" style="width: 42.67px;">赞赏</p></div>
+                </div>
+                <div class="b15"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".bd-payment-way label").click(function () {
+            $(".qrcode-img[id^='qrCode_']").hide();
+            $("#qrCode_" + ($(this).index() + 1)).show();
+        });
+    </script>
+    <div class="uk-hidden-small" style="position: fixed;left: 0;top: 50%;margin-top: -75px;">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=773853251&site=qq&menu=yes">
+            <img border="0" src="http://wpa.qq.com/pa?p=2:773853251:53" alt="魔工坊官方联络官" title="魔工坊官方联络官"/>
+        </a>
+    </div>
+    <div class="b20"></div>
+    <div class="footer" data-uk-grid-margin>
+        <div class="uk-progress uk-progress-striped uk-active border_radius0">
+            <div class="uk-progress-bar width-100"></div>
+        </div>
+        <div class="uk-container uk-container-center">
+            <h6 class="uk-text-center">
+                <a href="http://www.mooban.cn/" class="b">网站首页</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/index.html">关于我们</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/contact.html">联系方式</a>
+                | <a href="http://www.mooban.cn/sitemap/" class="b" target="_blank">网站地图</a>
+                | <a href="http://www.mooban.cn/link/" class="b" target="_blank">友情链接</a>
+                | <a href="http://www.mooban.cn/about/money.html" class="b" target="_blank">新手上路</a>
+                | <a href="http://ad.mooban.cn/" class="b" target="_blank">广告招商</a> | <a
+                    href="http://guestbook.mooban.cn/" class="b" target="_blank">网站留言</a> | <a
+                    href="http://www.mooban.cn/feedback/" class="b" target="_blank">产品反馈</a> | <a
+                    href="http://rss.mooban.cn/" class="b" target="_blank">RSS订阅</a> | <a
+                    href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" class="b" target="_blank"
+                    rel="nofollow">蜀ICP备13007465号-2</a>
+                <p class="uk-margin-small"/>
+                &copy; 2015 - 2018 Mooban.Cn All Rights Reserved<span class="uk-hidden-small am-show-md-up"> | <a
+                    href="http://www.mooban.cn/" class="b">魔工坊</a>，打造专业建站资源分享平台！</span>            </p>
+                <p class="uk-hidden-small">
+                    <a href="http://www.miibeian.gov.cn/" target="_blank" title="备案查询"
+                       data-uk-tooltip="{pos:'left',animation:true}" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/1.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"/></a>&nbsp;&nbsp;
+                    <a href="http://webscan.360.cn/index/checkwebsite/url/www.mooban.cn" target="_blank" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/common/360.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"/></a>&nbsp;&nbsp;
+                    <a href="http://www.cdnet110.com/index.php" target="_blank"
+                       data-uk-tooltip="{pos:'right',animation:true}" title="成都网警" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/4.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"/></a>
+                </p>
+            </h6>
+        </div>
+    </div>
+</div>
+<div id="mb_dialog" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-header">
+            <h2>魔工坊系统提示</h2>
+        </div>
+        <p id="dialog_content"></p>
+        <div class="uk-modal-footer uk-text-center">
+            <button type="button" class="uk-button dsn" id="dialog_cancel" onclick="dialog()">关 闭</button>
+            <button type="button" class="uk-button uk-button-primary" id="dialog_ok">确 定</button>
+        </div>
+    </div>
+</div>
+<script>
+    var destoon_userid = 16260;
+    var destoon_username = 'songboriceboy';
+    var destoon_message = 0;
+    var destoon_mid = 3;
+    var destoon_chat = 0;
+    var destoon_cart = substr_count(get_cookie('cart'), ',');
+    var destoon_member = '', mb_member_touch = '';
+    if (destoon_mid == 2) {
+        destoon_member += '<a data-uk-tooltip="{pos:\'bottom\',offset:5,animation:true}" title="回到个人中心首页" href="http://www.mooban.cn/member/" class="uk-border-circle uk-thumbnail uk-overlay-toggle mr5">';
+    } else {
+        destoon_member += '<a data-uk-tooltip="{pos:\'bottom\',offset:5,animation:true}" title="猛击进入个人中心" href="http://www.mooban.cn/member/" class="uk-border-circle uk-thumbnail uk-overlay-toggle mr5" target="_blank">';
+    }
+    destoon_member += '<div class="uk-overlay uk-border-circle">';
+    destoon_member += '<img class="uk-animation-hover uk-animation-fade uk-border-circle" width="40" height="40" src="http://www.mooban.cn/api/avatar/show.php?username=songboriceboy&size=large&time=1515287684" alt="魔工坊">';
+    destoon_member += '<div class="uk-overlay-area uk-border-circle"></div>';
+    destoon_member += '</div>';
+    destoon_member += '</a>';
+    destoon_member += '<div class="uk-button-dropdown uk-dropdown-center uk-display-inline-block" data-uk-dropdown="">';
+    if (destoon_mid == 2) {
+        destoon_member += '<button onclick="Go(\'http://www.mooban.cn/member/\')" data-uk-tooltip="{pos:\'right\',offset:5,animation:true}" title="回到个人中心首页" class="uk-button uk-text-truncate t_capitalize" id="top-head-username" data-uk-tooltip="{pos:\'bottom\',offset:5,animation:true}" title="songboriceboy">songbori <i class="uk-icon-caret-down"></i></button>';
+    } else {
+        destoon_member += '<button onclick="OpenWin(\'http://www.mooban.cn/member/\')" data-uk-tooltip="{pos:\'right\',offset:5,animation:true}" title="猛击进入个人中心" class="uk-button uk-text-truncate t_capitalize" id="top-head-username" data-uk-tooltip="{pos:\'bottom\',offset:5,animation:true}" title="songboriceboy">songbori <i class="uk-icon-caret-down"></i></button>';
+    }
+    destoon_member += '<div class="uk-dropdown  uk-dropdown-width-2 uk-dropdown-user">';
+    destoon_member += '<div class="uk-grid uk-dropdown-grid">';
+    destoon_member += '<div class="uk-width-1-2">';
+    destoon_member += '<div class="uk-panel uk-text-truncate">';
+    destoon_member += '<a href="http://www.mooban.cn/member/line.php" title="当前在线，点击隐身" data-uk-tooltip="{pos:\'top\',offset:5,animation:true}" class="uk-text-bold list_cat b"><i class="mb-a uk-icon-toggle-on"></i> 魔芋<span class="px12 f_n uk-text-muted"> / 魔芋会员</span></a>';
+    destoon_member += '</div>';
+    destoon_member += '<ul class="uk-nav uk-nav-dropdown">';
+    destoon_member += '<li class="uk-nav-header">个人信息</li>';
+    destoon_member += '<li class="list_cat"><a href="http://songboriceboy.mzone.mooban.cn/" target="_blank"><i class="uk-icon-home mb-a"></i> 个人主页</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/credit.php?action=qiandao" target="_blank"><i class="uk-icon-check-circle mb-a"></i> 每日签到</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/edit.php" target="_blank"><i class="uk-icon-edit mb-a"></i> 编辑资料</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/avatar.php" target="_blank"><i class="uk-icon-smile-o mb-a"></i> 更新头像</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/edit.php?tab=1" target="_blank"><i class="uk-icon-lock mb-a"></i> 修改密码</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/message.php" target="_blank"><i class="uk-icon-comment mb-a"></i> 站内信息</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/chat.php" target="_blank"><i class="uk-icon-comments mb-a"></i> 会话留言</a></li>';
+    destoon_member += '</ul>';
+    destoon_member += '</div>';
+    destoon_member += '<div class="uk-width-1-2">';
+    destoon_member += '<ul class="uk-nav uk-nav-dropdown">';
+    destoon_member += ' <li class="uk-nav-header">我的资产</li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/record.php" target="_blank"><i class="uk-icon-cny mb-a"></i> 魔币<b> 0.00 </b>枚</a></li>';
+    destoon_member += ' <li class="list_cat"><a href="http://www.mooban.cn/member/credit.php" target="_blank"><i class="uk-icon-database mb-a"></i> 魔豆<b> <span id="currencyTxt">27</span> </b>粒</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/record.php" target="_blank"><i class="uk-icon-heart mb-a"></i> 查看魔币流水</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/charge.php?action=pay" target="_blank"><i class="uk-icon-shield mb-a"></i> 在线充值魔币</a></li>';
+    destoon_member += '<li class="uk-nav-header">资源分享</li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/my.php" target="_blank"><i class="uk-icon-plus-square mb-a"></i> 发布资源</a></li>';
+    destoon_member += '<li class="list_cat"><a href="http://www.mooban.cn/member/record.php?action=&fields=3&kw=信息返利&type=1" target="_blank"><i class="uk-icon-child mb-a"></i> 下载分成</a></li>';
+    destoon_member += '</ul>';
+    destoon_member += '</div>';
+    destoon_member += '</div>';
+    destoon_member += '<div class="uk-panel">';
+    destoon_member += '<div class="b10"></div>';
+    destoon_member += '<a href="http://www.mooban.cn/member/logout.php" class="uk-button uk-button uk-width-1-1 uk-button-danger list_cat f_white"><i class="uk-icon-power-off mb-a"></i> 安 全 退 出</a>';
+    destoon_member += ' </div>';
+    destoon_member += '</div>';
+    destoon_member += '</div>';
+    mb_member_touch += '<li> <a href="http://www.mooban.cn/member/">&nbsp;&nbsp;&nbsp;&nbsp;<i class="uk-icon-mail-forward"></i> 个人中心</a></li>';
+    mb_member_touch += '<li> <a href="http://www.mooban.cn/member/logout.php">&nbsp;&nbsp;&nbsp;&nbsp;<i class="uk-icon-mail-forward"></i> 安全退出</a></li>';
+    $('#destoon_member').html(destoon_member);
+    $('#mb_member_touch').html(mb_member_touch);
+    window.setInterval('PushNew()', 60 * 1000);
+    $(function () {
+        $("img").lazyload();
+    });
+    NProgress.done(true);
+    $(".mb_spinner").hide();
+</script>
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?7dd7ba5dae6db1993d86af0ce4d68a05";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

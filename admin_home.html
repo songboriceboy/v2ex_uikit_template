@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link href="uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <link href="mooban.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="uikit-2.25.0/js/uikit.min.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<header class="uk-hidden-small mb-a" id="top-header">
+    <div class="uk-container uk-container-center">
+        <nav class="uk-navbar">
+            <a class="uk-navbar-brand mb-hover-360" href="http://www.mooban.cn/" title="魔工坊_专业模板分享平台"
+               data-uk-tooltip="{pos:'bottom',animation:true,offset:-10}">
+                <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60">
+                &nbsp;<img src="http://www.mooban.cn/skin/moob/image/logo.gif" alt="魔工坊">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <ul class="uk-navbar-nav">
+                <li><a href="http://www.mooban.cn/">首页</a></li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/down/">模板</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/original/">原创</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/source/">源码</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/plugin/">插件</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/material/">素材</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://school.mooban.cn/">教程</a>
+
+                </li>
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="http://www.mooban.cn/know/">问答</a>
+
+                </li>
+                <li class="uk-parent uk-hidden-medium uk-active" data-uk-dropdown="">
+                    <a href="http://st.mooban.cn/?fr=mooban" target="_blank">更多</a>
+
+                </li>
+            </ul>
+
+            <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
+                <div class="uk-button-group"><a class="uk-button uk-button-primary f_white mr5"
+                                                href="http://www.mooban.cn/member/register.php">免费注册</a><a
+                        class="uk-button uk-button-primary f_white"
+                        href="http://www.mooban.cn/member/login.php">立即登录</a></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--彩色分割线-->
+<div class="head_bottom uk-hidden-small nprogress-custom-parent" id="hb1">&nbsp;
+    <div id="nprogress">
+    <div class="bar" role="bar" >
+        <div class="peg"></div>
+    </div>
+
+    </div>
+</div>
+
+<!--小屏手机版头部-->
+<div class="uk-container uk-visible-small touch-nav">
+    <div class="uk-grid">
+        <div class="uk-width-4-6">
+            <div class="uk-navbar-brand uk-navbar-center uk-float-left" id="touch_brand">
+                <a class="w1" href="http://www.mooban.cn/down/"> <i class="uk-icon-home"></i> 会员 - 魔工坊</a></div>
+        </div>
+        <div class="uk-width-2-6">
+            <nav class="uk-navbar">
+                <a href="#offcanvas" class="uk-navbar-toggle uk-float-right w1" data-uk-offcanvas=""></a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="b20 uk-visible-small"></div>
+<div class="b20 uk-visible-small"></div>
+<!--小屏手机版offcanvas-->
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li class="uk-active"><a href="http://www.mooban.cn/"><i class="uk-icon-home"></i> 首页</a></li>
+            <li><a href="http://www.mooban.cn/down/"><i class="uk-icon-folder-o"></i> 模板</a></li>
+            <li><a href="http://www.mooban.cn/original/"><i class="uk-icon-folder-o"></i> 原创</a></li>
+            <li><a href="http://www.mooban.cn/source/"><i class="uk-icon-folder-o"></i> 源码</a></li>
+            <li><a href="http://www.mooban.cn/plugin/"><i class="uk-icon-folder-o"></i> 插件</a></li>
+            <li><a href="http://www.mooban.cn/material/"><i class="uk-icon-folder-o"></i> 素材</a></li>
+            <li><a href="http://school.mooban.cn/"><i class="uk-icon-folder-o"></i> 教程</a></li>
+            <li><a href="http://www.mooban.cn/know/"><i class="uk-icon-folder-o"></i> 问答</a></li>
+            <li class="uk-parent">
+                <a href="#"><i class="uk-icon-user"></i> 会员相关</a>
+                <div>
+                    <ul class="uk-nav-sub uk-text-small" id="mb_member_touch">
+                        <li><a href="http://www.mooban.cn/member/register.php">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="uk-icon-mail-forward"></i> 免费注册</a></li>
+                        <li><a href="http://www.mooban.cn/member/login.php">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="uk-icon-mail-forward"></i> 立即登录</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--整体背景-->
+<div class="mb-cover">
+    <div class="b20"></div>
+<!--固定宽度，居中对齐-->
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-medium-1-6 uk-hidden-small">
+                <div id="mb_member_left">
+                    <div class="uk-panel uk-panel-box">
+                        <div class="uk-text-center uk-margin-small-bottom mb-member-avatar">
+                            <a data-uk-tooltip="{pos:'left',offset:5,animation:true}" title="修改头像" href="http://www.mooban.cn/member/avatar.php" class="uk-border-circle uk-thumbnail uk-overlay-toggle thumb_hover">
+                                <div class="uk-overlay uk-border-circle">
+                                    <img class="uk-border-circle" width="90" height="90" src="http://www.mooban.cn/api/avatar/show.php?username=songboriceboy&amp;size=large&amp;time=1515321610" alt="魔工坊">
+                                    <div class="uk-overlay-area uk-border-circle"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <h2 class="uk-panel-title uk-text-center t_capitalize uk-text-truncate"><a href="http://www.mooban.cn/member/" class="b" title="个人中心首页" data-uk-tooltip="{pos:'top',offset:5,animation:true}">songboriceboy</a></h2>
+                        <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
+                            <li class="uk-parent uk-active">
+                                <a href="#" class="uk-text-large"><i class="uk-icon-user"></i> 会员服务</a>
+                                <ul class="uk-nav-sub">
+                                    <li class="side_a list_cat" id="message"><span class="f_r"><a href="message.php?action=send" class="m">发信</a></span><a href="message.php" class="n"><i class="uk-icon-comment mb-a"></i> 站内信件</a></li>
+                                    <li class="side_a list_cat" id="chats"><span class="f_r"><a href="chat.php?action=add" class="m">查看</a></span><a href="chat.php" class="n"><i class="uk-icon-comments mb-a"></i> 站内交谈</a></li>
+                                    <li class="side_a list_cat" id="friend"><span class="f_r"><a href="friend.php?action=add" class="m">添加</a></span><a href="friend.php" class="n"><i class="uk-icon-group mb-a"></i> 我的好友</a></li>
+                                    <li class="side_a list_cat" id="favorite"><span class="f_r"><a href="favorite.php?action=add" class="m">增添</a></span><a href="favorite.php" class="n"><i class="uk-icon-star mb-a"></i> 资源收藏</a></li>
+                                    <li class="side_a list_cat" id="ad"><span class="f_r"><a href="ad.php?action=add" class="m">购买</a></span><a href="ad.php" class="n"><i class="uk-icon-adn mb-a"></i> 广告服务</a></li>
+                                    <li class="side_a list_cat" id="oauth"><span class="f_r"><a href="oauth.php" class="m">绑定</a></span><a href="oauth.php" class="n"><i class="uk-icon-qq mb-a"></i> 一键登录</a></li>
+                                    <li class="side_a list_cat" id="edit"><span class="f_r"><a href="avatar.php" class="m">头像</a></span><a href="edit.php" class="n"><i class="uk-icon-edit mb-a"></i> 修改资料</a></li>
+                                    <li class="side_a list_cat" id="ask"><span class="f_r"><a href="ask.php?action=add" class="m">提问</a></span><a href="ask.php" class="n"><i class="uk-icon-coffee mb-a"></i> 客服中心</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a href="#" class="uk-text-large"><i class="uk-icon-info-circle"></i> 信息管理</a>
+                                <ul class="uk-nav-sub">
+                                    <li class="side_a list_cat" id="mid_15"><span class="f_r"><a href="my.php?mid=15&amp;action=add" class="m">发布</a></span><a href="my.php?mid=15" class="n"><i class="uk-icon-tag mb-a"></i> 模板管理</a></li>
+                                    <li class="side_a list_cat" id="mid_26"><span class="f_r"><a href="my.php?mid=26&amp;action=add" class="m">发布</a></span><a href="my.php?mid=26" class="n"><i class="uk-icon-tag mb-a"></i> 素材管理</a></li>
+                                    <li class="side_a list_cat" id="mid_21"><span class="f_r"><a href="my.php?mid=21&amp;action=add" class="m">发布</a></span><a href="my.php?mid=21" class="n"><i class="uk-icon-tag mb-a"></i> 教程管理</a></li>
+                                    <li class="side_a list_cat" id="mid_10"><span class="f_r"><a href="my.php?mid=10&amp;action=add" class="m">发布</a></span><a href="my.php?mid=10" class="n"><i class="uk-icon-tag mb-a"></i> 问答管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a href="#" class="uk-text-large"><i class="uk-icon-inbox"></i> 交易管理</a>
+                                <ul class="uk-nav-sub">
+                                    <li class="side_a list_cat" id="record"><span class="f_r"><a href="record.php?action=pay" class="m">站内</a></span><a href="record.php" class="n"><i class="uk-icon-cny mb-a"></i> 魔币流水</a></li>
+                                    <li class="side_a list_cat" id="charge"><span class="f_r"><a href="charge.php?action=pay" class="m">充值</a></span><a href="charge.php?action=record" class="n"><i class="uk-icon-history mb-a"></i> 充值记录</a></li>
+                                    <li class="side_a list_cat" id="cash"><span class="f_r"><a href="cash.php" class="m">提现</a></span><a href="cash.php?action=record" class="n"><i class="uk-icon-sign-out mb-a"></i> 魔币提现</a></li>
+                                    <li class="side_a list_cat" id="credit"><span class="f_r"><a href="credit.php?action=buy" class="m">购买</a></span><a href="credit.php" class="n"><i class="uk-icon-star mb-a"></i> 魔豆管理</a></li>
+                                    <li class="side_a list_cat" id="addr"><span class="f_r"><a href="address.php?action=add" class="m">添加</a></span><a href="address.php" class="n"><i class="uk-icon-map-marker mb-a"></i> 收货地址</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a href="#" class="uk-text-large"><i class="uk-icon-home"></i> 主页管理</a>
+                                <ul class="uk-nav-sub">
+                                    <li class="side_a list_cat" id="homepage"><span class="f_r"><a href="http://www.mooban.cn/index.php?homepage=songboriceboy&amp;update=1" class="m" target="_blank">预览</a></span><a href="home.php" class="n"><i class="uk-icon-cog mb-a"></i> 主页设置</a></li>
+                                    <li class="side_a list_cat" id="style"><span class="f_r"><a href="style.php?action=view" class="m">查看</a></span><a href="style.php" class="n"><i class="uk-icon-wrench mb-a"></i> 主题设置</a></li>
+                                    <li class="side_a list_cat" id="news"><span class="f_r"><a href="news.php?action=add" class="m">添加</a></span><a href="news.php" class="n"><i class="uk-icon-globe mb-a"></i> 成长经历</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <!--<li class="uk-nav-header">Header</li>
+                             <li class="uk-nav-divider"></li>
+                             <li><a href=""><i class="uk-icon-rss"></i> Item</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-medium-5-6" id="mb_list_right">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                    <link rel="stylesheet" type="text/css" href="http://www.mooban.cn/member/image/index_resonance.css">
+                    <div class="uk-grid uk-grid-divider" data-uk-grid-margin="">
+                        <div class="uk-width-medium-4-6">
+                            <div id="warn">
+                            </div>
+                            <div class="i_info">
+                                <ul class="uk-list">
+                                    <li class="list_cat">
+                                        <i class="uk-icon-vimeo-square mb-a" title="已通过认证" data-uk-tooltip="{pos:'top',animation:true}"></i> 认证：
+                                        <img src="http://www.mooban.cn/member/image/v_email.gif" width="16" height="16" title="已通过邮箱认证" align="absmiddle" data-uk-tooltip="{pos:'top',animation:true}"> <a href="validate.php?action=email" class="b">邮箱</a> &nbsp;
+                                        <img src="http://www.mooban.cn/member/image/u_bank.gif" width="16" height="16" title="未通过银行帐号认证" align="absmiddle" data-uk-tooltip="{pos:'top',animation:true}"> <a href="validate.php?action=bank" class="b">银行</a> &nbsp;
+                                    </li>
+                                    <li class="list_cat">
+                                        <i class="uk-icon-envelope mb-a"></i> 信件：
+                                        <strong class="uk-text-danger">0</strong> 封 <a href="message.php" class="b">未读站内信</a>
+                                        &nbsp;
+                                        <!-- <a href="message.php?typeid=1" class="b">询价</a> |
+                                         <a href="message.php?typeid=2" class="b">报价</a> |-->
+                                        <a href="message.php?typeid=3" class="b">留言</a> |
+                                        <a href="message.php?typeid=4" class="b">信使</a> |
+                                        <a href="message.php?action=send" class="b">发信</a>
+                                    </li>
+                                    <li class="list_cat">
+                                        <i class="uk-icon-database mb-a"></i> 魔币：
+                                        <strong class="uk-text-danger px14">0.00</strong> 枚可用 <span class="f_gray">(0.00枚锁定)</span>                    &nbsp;
+                                        <a href="record.php" class="b">魔币流水</a> |
+                                        <a href="record.php?action=&amp;fields=3&amp;kw=信息返利&amp;type=1&amp;fromtime=&amp;totime=" class="b">分成</a> |
+                                        <a href="cash.php" class="b">提现</a> |
+                                        <a href="charge.php?action=pay" class="uk-button uk-button-primary uk-button-mini list_cat"><i class="uk-icon-plus-circle mb-a"></i> 充值魔币</a>
+                                    </li>
+                                    <li class="list_cat">
+                                        <i class="uk-icon-star mb-a"></i> 魔豆：
+                                        <strong class="uk-text-danger px14">27</strong>
+                                        &nbsp;<a href="credit.php" class="b">魔豆记录</a> |
+                                        <a href="credit.php?action=buy" class="b">购买魔豆</a> |
+                                        <a href="credit.php?action=invite" class="b">推广赚魔豆</a>
+                                        <form method="post" action="credit.php" class="uk-display-inline">
+                                            <input type="hidden" name="action" value="qiandao">
+                                            <input type="hidden" name="type" value="index">
+                                            <input type="hidden" name="title" value="签到就可以赚魔豆，真给力吖！">
+                                            | <button type="submit" name="submit" href="credit.php?action=qiandao" class="uk-button uk-button-primary uk-button-mini list_cat"><i class="uk-icon-check-circle mb-a"></i> 每日签到</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="uk-grid mb-member-index-icon" data-uk-grid-margin="">
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro1 thumb-a">
+                                        <a href="my.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/my.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="my.php" class="b">发布信息</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro2 thumb-a">
+                                        <a href="edit.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/edit.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="edit.php" class="b">完善资料</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro3 thumb-a">
+                                        <a href="message.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/publish.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="message.php" class="b">站内信</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro4 thumb-a">
+                                        <a href="record.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/log.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="record.php" class="b">魔币记录</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro5 thumb-a">
+                                        <a href="friend.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/message.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="friend.php" class="b">我的好友</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro6 thumb-a">
+                                        <a href="favorite.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/friend.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="favorite.php" class="b">我的收藏</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro11 thumb-a">
+                                        <a href="record.php?action=login" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay ">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/znx.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="record.php?action=login" class="b">登录日志</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro8 thumb-a">
+                                        <a href="chat.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/favorite.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="chat.php" class="b">在线聊天</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-metro10 thumb-a">
+                                        <a href="credit.php" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/money.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="credit.php" class="b">魔豆管理</a></h2>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <div class="uk-text-center uk-margin-small-bottom mb-member-home thumb-a">
+                                        <a href="http://songboriceboy.mzone.mooban.cn/" target="_blank" class="uk-thumbnail uk-overlay-toggle thumb_hover">
+                                            <div class="uk-overlay ">
+                                                <img width="78" height="78" src="http://www.mooban.cn/skin/moob/icon/credit.png" alt="魔工坊">
+                                                <div class="uk-overlay-area"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h2 class="uk-panel-title uk-text-center px16"><a href="http://songboriceboy.mzone.mooban.cn/" class="b" target="_blank">我的主页</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-2-6">
+                            <div>
+                                <div class="uk-panel uk-panel-box uk-margin-bottom">
+                                    <h3 class="uk-panel-title list_cat"><a class="b" href="http://announce.mooban.cn/" title="更多公告" target="_blank" data-uk-tooltip="{pos:'right',animation:true}"><i class="uk-icon-bullhorn mb-a"></i> 魔工坊公告栏</a></h3>
+                                    <div id="announces" style="height: 66px;overflow: hidden">
+                                        <ul class="uk-list uk-margin-remove px12">
+                                            <li style="height: 22px;line-height: 22px;overflow: hidden"><a href="message.php?action=show&amp;itemid=1119" title="【通知】【号外】DT物流运输平台网站模板(DZ论坛+测试数据)更新啦！" data-uk-tooltip="{pos:'left',animation:true}" class="b list_cat"><i class="uk-icon-bell-o mb-a"></i> 【号外】DT物流运输平台网站模板(DZ论坛+测试数据)更新啦！</a></li>                            <li style="height: 22px;line-height: 22px;overflow: hidden"><a href="http://announce.mooban.cn/9.html" target="_blank" title="【公告】魔工坊浏览器扩展正式上架谷歌市场" class="b list_cat" data-uk-tooltip="{pos:'left',animation:true}"><i class="uk-icon-bell-o mb-a"></i> 魔工坊浏览器扩展正式上架谷歌市场</a></li>
+                                            <li style="height: 22px;line-height: 22px;overflow: hidden"><a href="https://st.mooban.cn/?fr=mooban" target="_blank" title="【公告】地表最强新标签页扩展发布啦" class="b list_cat" data-uk-tooltip="{pos:'left',animation:true}"><i class="uk-icon-bell-o mb-a"></i> 地表最强新标签页扩展发布啦</a></li>
+                                            <li style="height: 22px;line-height: 22px;overflow: hidden"><a href="http://announce.mooban.cn/2.html" target="_blank" title="【公告】参与魔工坊站内互动赢取魔豆" class="b list_cat" data-uk-tooltip="{pos:'left',animation:true}"><i class="uk-icon-bell-o mb-a"></i> 参与魔工坊站内互动赢取魔豆</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-panel uk-panel-box uk-margin-bottom">
+                                    <h3 class="uk-panel-title list_cat">
+                                        <a class="b f_l" href="edit.php" title="修改资料" data-uk-tooltip="{pos:'top',animation:true}"><i class="uk-icon-smile-o mb-a"></i> 资料</a>
+                                        <div class="f_r" title="所在地天气" data-uk-tooltip="{pos:'right',animation:true}">
+                                            <script type="text/javascript" src="http://ext.weather.com.cn/98287.js"></script></div></h3></div></div></div></div></div></div></div>
+    </div>
+
+    <div class="b20"></div>
+    <!--页脚部分-->
+    <div class="footer" data-uk-grid-margin="">
+
+        <div class="uk-container uk-container-center uk-grid-margin">
+            <h6 class="uk-text-center">
+                <a href="http://www.mooban.cn/" class="b">网站首页</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/index.html">关于我们</a>
+                | <a class="b" target="_blank" href="http://www.mooban.cn/about/contact.html">联系方式</a>
+                | <a href="http://www.mooban.cn/sitemap/" class="b" target="_blank">网站地图</a>
+                | <a href="http://www.mooban.cn/link/" class="b" target="_blank">友情链接</a>
+                | <a href="http://www.mooban.cn/about/money.html" class="b" target="_blank">新手上路</a>
+                | <a href="http://ad.mooban.cn/" class="b" target="_blank">广告招商</a> | <a
+                    href="http://guestbook.mooban.cn/" class="b" target="_blank">网站留言</a> | <a
+                    href="http://www.mooban.cn/feedback/" class="b" target="_blank">产品反馈</a> | <a
+                    href="http://rss.mooban.cn/" class="b" target="_blank">RSS订阅</a> | <a
+                    href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" class="b" target="_blank"
+                    rel="nofollow">蜀ICP备13007465号-2</a>
+                <p class="uk-margin-small">
+                    © 2015 - 2018 Mooban.Cn All Rights Reserved<span class="uk-hidden-small am-show-md-up"> | <a
+                        href="http://www.mooban.cn/" class="b">魔工坊</a>，打造专业建站资源分享平台！</span></p>
+                <p class="uk-hidden-small">
+                    <a href="http://www.miibeian.gov.cn/" target="_blank" title="备案查询"
+                       data-uk-tooltip="{pos:'left',animation:true}" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/1.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>&nbsp;&nbsp;
+                    <a href="http://webscan.360.cn/index/checkwebsite/url/www.mooban.cn" target="_blank" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/common/360.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>&nbsp;&nbsp;
+                    <a href="http://www.cdnet110.com/index.php" target="_blank"
+                       data-uk-tooltip="{pos:'right',animation:true}" title="成都网警" rel="nofollow"><img
+                            src="http://www.mooban.cn/skin/moob/img/4.png" alt="魔工坊" width="119" height="46"
+                            class="border_radius3"></a>
+                </p>
+            </h6>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

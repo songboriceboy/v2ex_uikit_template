@@ -1,4 +1,5 @@
-<html lang="zh-cn" dir="ltr" >
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport"
@@ -10,8 +11,7 @@
     <script src="jquery/jquery.js"></script>
     <script src="uikit-2.25.0/js/uikit.min.js"></script>
 </head>
-<body style="">
-
+<body>
 <header class="uk-hidden-small mb-a" id="top-header">
     <div class="uk-container uk-container-center">
         <nav class="uk-navbar">
@@ -65,15 +65,17 @@
         </nav>
     </div>
 </header>
-<div class="head_bottom uk-hidden-small nprogress-custom-parent" id="hb1">&nbsp;<div id="nprogress">
-    <div class="bar" role="bar" style="transform: translate3d(0%, 0px, 0px); transition: all 600ms ease;">
+
+<div class="head_bottom uk-hidden-small nprogress-custom-parent" id="hb1">&nbsp;
+    <div id="nprogress">
+    <div class="bar" role="bar" >
         <div class="peg"></div>
     </div>
-    <div class="spinner" role="spinner">
-        <div class="spinner-icon"></div>
+
     </div>
 </div>
-</div>
+
+
 <div class="uk-container uk-visible-small touch-nav">
     <div class="uk-grid">
         <div class="uk-width-4-6">
@@ -89,6 +91,7 @@
 </div>
 <div class="b20 uk-visible-small"></div>
 <div class="b20 uk-visible-small"></div>
+
 <div id="offcanvas" class="uk-offcanvas">
     <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
         <ul class="uk-nav uk-nav-offcanvas">
@@ -114,6 +117,7 @@
         </ul>
     </div>
 </div>
+
 <div class="mb-cover">
     <div class="b20"></div>
 
@@ -133,7 +137,7 @@
                                                     class="uk-icon-user mb-a"></i> 用户登录</a>
                                         </h1>
                                         <form id="Dform" class="uk-form" method="post" action="login.php"
-                                              >
+                                        >
                                             <input name="forward" type="hidden" id="forward"
                                                    value="http://www.mooban.cn/member/register.php">
                                             <input name="option" type="hidden" value="username">
@@ -155,9 +159,7 @@
                                                            maxlength="20" class="uk-form-width-large uk-form-large"
                                                            name="password" id="password" type="password" value=""
                                                            placeholder="请输入登录密码" data-cached-title="6-20个字符，区分大小写">
-                                                    <a tabindex="-1" class="uk-form-password-toggle"
-                                                       data-uk-form-password="{lblShow:'显示', lblHide:'隐藏'}"><i
-                                                            class="uk-icon-eye"></i></a>
+
 
                                                 </div>
                                             </div>
@@ -246,9 +248,7 @@
 
     <div class="b20"></div>
     <div class="footer" data-uk-grid-margin="">
-        <div class="uk-progress uk-progress-striped uk-active border_radius0">
-            <div class="uk-progress-bar width-100"></div>
-        </div>
+ 
         <div class="uk-container uk-container-center uk-grid-margin">
             <h6 class="uk-text-center">
                 <a href="http://www.mooban.cn/" class="b">网站首页</a>
@@ -282,24 +282,6 @@
             </h6>
         </div>
     </div>
-</div>
-<div id="mb_dialog" class="uk-modal">
-    <div class="uk-modal-dialog">
-        <div class="uk-modal-header">
-            <h2>魔工坊系统提示</h2>
-        </div>
-        <p id="dialog_content"></p>
-        <div class="uk-modal-footer uk-text-center">
-            <button type="button" class="uk-button dsn" id="dialog_cancel" onclick="dialog()">关 闭</button>
-            <button type="button" class="uk-button uk-button-primary" id="dialog_ok">确 定</button>
-        </div>
-    </div>
-</div>
-
-
-<div class="uk-tooltip uk-tooltip-right "
-     style="top: 305px; visibility: visible; display: none; opacity: 1; left: 814.797px;">
-    <div class="uk-tooltip-inner">6-20个字符，区分大小写</div>
 </div>
 
 </body>

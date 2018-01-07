@@ -1,62 +1,16 @@
-
 <!doctype html>
 <html lang="zh-cn" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta http-equiv ="X-UA-Compatible" content = "IE=edge,chrome=1"/>
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="address=no"/>
-    <meta content="email=no" name="format-detection" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="320">
-    <title>管理信息_个人中心_魔工坊</title>
-    <meta name="keywords" content="魔工坊,模工坊,免费模板,网站模板,Discuz模板开发,Destoon模板定制,ECShop网店模板,DedeCMS企业模板,WordPress博客模板,AppcanAPP模板,HTML5响应式模板,Wap手机模板"/>
-    <meta name="description" content="魔工坊是专业网页模板，网站源代码，APP前端模板，建站素材和插件等资源的分享下载及技术交流平台。"/>
-    <meta name="applicable-device"content="pc,mobile">
-    <meta name="generator" content="Chaoge"/>
-    <meta name="author" content="超哥"/>
-    <meta name="Copyright" content="Chaoge"/>
-    <meta name="robots" content="all"/>
-    <link rel="shortcut icon" type="image/x-icon" href="http://www.mooban.cn/favicon.ico"/>
-    <link rel="bookmark" type="image/x-icon" href="http://www.mooban.cn/favicon.ico"/>
-    <link rel="apple-touch-icon-precomposed" href="http://www.mooban.cn/skin/moob/img/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-title" content="魔工坊">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="screen-orientation" content="portrait">
-    <meta name="x5-orientation" content="portrait">
-    <meta name="full-screen" content="yes">
-    <meta name="x5-fullscreen" content="true">
-    <link rel="dns-prefetch" href="//cdn.bootcss.com">
-    <script type="text/javascript" src="http://www.mooban.cn/file/script/mooban.js"></script>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://www.mooban.cn/file/script/showie.js"></script>
-    <![endif]-->
-    <!--[if IE]>
-    <script src="//cdn.bootcss.com/html5shiv/3.7/html5shiv.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 10]>
-    <script>
-        $(function(){
-            $(".search-tips-dropdown").remove();
-            if(get_cookie('viewCount')&&get_cookie('viewCount')>0){
-                set_cookie('viewCount',parseInt(get_cookie('viewCount'))+1)
-            }else{
-                showmsg('亲，推荐使用谷歌浏览器或极速模式！');
-                set_cookie('viewCount',1);
-            }
-        });
-    </script>
-    <![endif]-->
-    <script type="text/javascript">window.onerror=function(){return true;}</script>    <script type="text/javascript" src="http://www.mooban.cn/lang/zh-cn/lang.js"></script>
-    <script type="text/javascript" src="http://www.mooban.cn/file/script/jquery.lazyload.js"></script>        <script type="text/javascript">
-    var searchid = 15;
-    NProgress.configure({ ease: 'linear', speed: 600 });
-    NProgress.start();
-</script>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link href="uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <link href="mooban.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="uikit-2.25.0/js/uikit.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="http://www.mooban.cn/member/image/style_response.css"/>-->
 </head>
 <body>
 <div class="mb_spinner uk-hidden-small">
@@ -68,265 +22,43 @@
     <div class="uk-container uk-container-center">
         <nav class="uk-navbar">
             <a class="uk-navbar-brand mb-hover-360" href="http://www.mooban.cn/" title="魔工坊_专业模板分享平台" data-uk-tooltip="{pos:'bottom',animation:true,offset:-10}">
-                <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60"/>
-                &nbsp;<img src="http://www.mooban.cn/skin/moob/image/logo.gif" alt="魔工坊" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--<img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60"/>-->
+                <!--&nbsp;-->
+                <img src="http://www.mooban.cn/skin/moob/image/logo.gif" alt="魔工坊" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </a>
             <ul class="uk-navbar-nav">
                 <li ><a href="http://www.mooban.cn/">首页</a></li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/down/">模板</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar"  style="width: 200px">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站</li>
-                                    <li><a href="http://www.mooban.cn/down/dt-c5-1.html" target="_blank">Destoon</a></li>
-                                    <li><a href="http://www.mooban.cn/down/wp-c48-1.html" target="_blank">WordPress</a></li>
-                                    <li><a href="http://www.mooban.cn/down/dede-c31-1.html" target="_blank">DeDeCMS</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ec-c7-1.html" target="_blank">ECShop</a></li>
-                                    <li><a href="http://www.mooban.cn/down/dz-c56-1.html" target="_blank">Discuz</a></li>
-                                    <li><a href="http://www.mooban.cn/down/static-c143-1.html" target="_blank">HTML</a></li>
-                                    <li><a href="http://www.mooban.cn/down/qita-c225-1.html" target="_blank">其他模板</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP</li>
-                                    <li><a href="http://www.mooban.cn/down/app-c6-1.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ecm-c33-1.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ect-c66-1.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://www.mooban.cn/down/pg-c65-1.html" target="_blank">PhoneGap</a></li>
-                                    <li><a href="http://www.mooban.cn/down/web-c64-1.html" target="_blank">WebAPP</a></li>
-                                    <li><a href="http://www.mooban.cn/down/api-c32-1.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://www.mooban.cn/down/React-c227-1.html" target="_blank">React</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/original/">原创</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar"  style="width: 200px">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站</li>
-                                    <li><a href="http://www.mooban.cn/original/dt-c101-1.html" target="_blank">Destoon</a></li>
-                                    <li><a href="http://www.mooban.cn/original/ec-c103-1.html" target="_blank">ECShop</a></li>
-                                    <li><a href="http://www.mooban.cn/original/dede-c104-1.html" target="_blank">DeDeCMS</a></li>
-                                    <li><a href="http://www.mooban.cn/original/dz-c108-1.html" target="_blank">Discuz</a></li>
-                                    <li><a href="http://www.mooban.cn/original/wp-c107-1.html" target="_blank">WordPress</a></li>
-                                    <li><a href="http://www.mooban.cn/original/static-c144-1.html" target="_blank">HTML</a></li>
-                                    <li><a href="http://www.mooban.cn/original/qita-c226-1.html" target="_blank">其他模板</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP</li>
-                                    <li><a href="http://www.mooban.cn/original/app-c102-1.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://www.mooban.cn/original/api-c105-1.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://www.mooban.cn/original/ecm-c106-1.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://www.mooban.cn/original/ect-c114-1.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://www.mooban.cn/original/pg-c113-1.html" target="_blank">PhoneGap</a></li>
-                                    <li><a href="http://www.mooban.cn/original/web-c112-1.html" target="_blank">WebAPP</a></li>
-                                    <li><a href="http://www.mooban.cn/original/React-c228-1.html" target="_blank">React</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/source/">源码</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
-                        <div class="uk-grid uk-dropdown-grid" style="">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站</li>
-                                    <li><a href="http://www.mooban.cn/source/platform-c176-1.html" target="_blank">地方门户</a></li>
-                                    <li><a href="http://www.mooban.cn/source/game-c187-1.html" target="_blank">网页游戏</a></li>
-                                    <li><a href="http://www.mooban.cn/source/government-c178-1.html" target="_blank">企业政府</a></li>
-                                    <li><a href="http://www.mooban.cn/source/entertainment-c179-1.html" target="_blank">娱乐休闲</a></li>
-                                    <li><a href="http://www.mooban.cn/source/taobao-c180-1.html" target="_blank">淘宝购物</a></li>
-                                    <li><a href="http://www.mooban.cn/source/article-c181-1.html" target="_blank">文章博客</a></li>
-                                    <li><a href="http://www.mooban.cn/source/classical-c182-1.html" target="_blank">艺术古典</a></li>
-                                    <li><a href="http://www.mooban.cn/source/list.php?catid=174" target="_blank">更多网站</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP</li>
-                                    <li><a href="http://www.mooban.cn/source/media-c189-1.html" target="_blank">影音图像</a></li>
-                                    <li><a href="http://www.mooban.cn/source/message-c190-1.html" target="_blank">通信聊天</a></li>
-                                    <li><a href="http://www.mooban.cn/source/shop-c191-1.html" target="_blank">网上购物</a></li>
-                                    <li><a href="http://www.mooban.cn/source/phone-c192-1.html" target="_blank">美化手机</a></li>
-                                    <li><a href="http://www.mooban.cn/source/read-c193-1.html" target="_blank">阅读学习</a></li>
-                                    <li><a href="http://www.mooban.cn/source/life-c194-1.html" target="_blank">便捷生活</a></li>
-                                    <li><a href="http://www.mooban.cn/source/trip-c195-1.html" target="_blank">出行必用</a></li>
-                                    <li><a href="http://www.mooban.cn/source/list.php?catid=175" target="_blank">更多APP</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/plugin/">插件</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar"  style="width: 200px">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站</li>
-                                    <li><a href="http://www.mooban.cn/plugin/dt-c129-1.html" target="_blank">Destoon</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/ec-c131-1.html" target="_blank">ECShop</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/dede-c132-1.html" target="_blank">DeDeCMS</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/dz-c136-1.html" target="_blank">Discuz</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/se-c138-1.html" target="_blank">ShopEx</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/pw-c139-1.html" target="_blank">PHPWind</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/wp-c135-1.html" target="_blank">WordPress</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP</li>
-                                    <li><a href="http://www.mooban.cn/plugin/app-c130-1.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/api-c133-1.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/ecm-c134-1.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/ect-c142-1.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/pg-c141-1.html" target="_blank">PhoneGap</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/web-c140-1.html" target="_blank">WebAPP</a></li>
-                                    <li><a href="http://www.mooban.cn/plugin/React-c229-1.html" target="_blank">React</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/material/">素材</a>
-                    <div class="uk-dropdown uk-dropdown-small uk-dropdown-navbar" style="min-width: 90px">
-                        <ul class="uk-nav uk-nav-dropdown">
-                            <li><a href="http://www.mooban.cn/material/effects-c17-1.html" target="_blank">网页特效</a></li>
-                            <li><a href="http://www.mooban.cn/material/psd-c15-1.html" target="_blank">PSD素材</a></li>
-                            <li><a href="http://www.mooban.cn/material/font-c98-1.html" target="_blank">字体文件</a></li>
-                            <li><a href="http://www.mooban.cn/material/vector-c16-1.html" target="_blank">矢量素材</a></li>
-                            <li><a href="http://www.mooban.cn/material/icon-c18-1.html" target="_blank">图标素材</a></li>
-                            <li><a href="http://www.mooban.cn/material/swf-c19-1.html" target="_blank">Flash文件</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-nav-header">热门搜索</li>
-                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索788次 约13条结果"><a href="http://www.mooban.cn/material/search.php?kw=%E9%AB%98%E4%BB%BF" rel="nofollow" target="_blank"><i class="uk-icon-search mb-a"></i> 高仿</a></li>
-                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索542次 约13条结果"><a href="http://www.mooban.cn/material/search.php?kw=%E5%93%8D%E5%BA%94%E5%BC%8F" rel="nofollow" target="_blank"><i class="uk-icon-search mb-a"></i> 响应式</a></li>
-                            <li class="list_cat" data-uk-tooltip="{pos:'right',animation:true}" title="搜索95次 约8条结果"><a href="http://www.mooban.cn/material/search.php?kw=%E8%8F%9C%E5%8D%95" rel="nofollow" target="_blank"><i class="uk-icon-search mb-a"></i> 菜单</a></li>
-                        </ul>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://school.mooban.cn/">教程</a>
-                    <div class="uk-dropdown uk-dropdown-width-3  uk-dropdown-navbar" style="">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站开发</li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-10.html" target="_blank">二次开发</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-28.html" target="_blank">JAVA</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-29.html" target="_blank">PHP</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-30.html" target="_blank">.NET&ASP</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-202.html" target="_blank">网络营销</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                </ul>
-                                <div class="uk-panel uk-text-muted">网站开发教程主要包括Web前端开发与后台开发</div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP开发</li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-44.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-45.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-46.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-203.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://school.mooban.cn/list-htm-catid-47.html" target="_blank">WebAPP</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                </ul>
-                                <div class="uk-panel uk-text-muted">APP开发教程主要包括WebAPP和APP混合开发</div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">热门分享</li>
-                                </ul>
-                                <div class="uk-panel">
-                                    <ul class="uk-list uk-list-line">
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
                     <a href="http://www.mooban.cn/know/">问答</a>
-                    <div class="uk-dropdown uk-dropdown-width-3  uk-dropdown-navbar" style="">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站开发</li>
-                                    <li><a href="http://www.mooban.cn/know/dt-c81-1.html" target="_blank">Destoon</a></li>
-                                    <li><a href="http://www.mooban.cn/know/ec-c83-1.html" target="_blank">ECShop</a></li>
-                                    <li><a href="http://www.mooban.cn/know/dede-c84-1.html" target="_blank">DeDeCMS</a></li>
-                                    <li><a href="http://www.mooban.cn/know/dz-c88-1.html" target="_blank">Discuz</a></li>
-                                    <li><a href="http://www.mooban.cn/know/pw-c91-1.html" target="_blank">PHPWind</a></li>
-                                    <li><a href="http://www.mooban.cn/know/phome-c89-1.html" target="_blank">帝国CMS</a></li>
-                                    <li><a href="http://www.mooban.cn/know/wp-c87-1.html" target="_blank">WordPress</a></li>
-                                    <li><a href="http://www.mooban.cn/know/other-c90-1.html" target="_blank">其他问题</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                </ul>
-                                <div class="uk-panel uk-text-muted">网站开发问答主要包括Web前端开发与后台开发</div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP开发</li>
-                                    <li><a href="http://www.mooban.cn/know/app-c82-1.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://www.mooban.cn/know/api-c85-1.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://www.mooban.cn/know/ecm-c86-1.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://www.mooban.cn/know/ect-c94-1.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://www.mooban.cn/know/web-c92-1.html" target="_blank">WebAPP</a></li>
-                                    <li><a href="http://www.mooban.cn/know/pg-c93-1.html" target="_blank">PhoneGap</a></li>
-                                    <li><a href="http://www.mooban.cn/know/weixin-c95-1.html" target="_blank">微信公众号</a></li>
-                                    <li><a href="http://www.mooban.cn/know/baidu-c96-1.html" target="_blank">百度直达号</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                </ul>
-                                <div class="uk-panel uk-text-muted">APP开发问答主要包括WebAPP和APP混合开发</div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">热门问答</li>
-                                </ul>
-                                <div class="uk-panel">
-                                    <ul class="uk-list uk-list-line">
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
                 <li class="uk-parent uk-hidden-medium uk-active" data-uk-dropdown="">
                     <a href="http://st.mooban.cn/?fr=mooban" target="_blank">更多</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">导航</li>
-                                    <li><a href="http://www.mooban.cn/special/" target="_blank">热门专题</a></li>
-                                    <li><a href="http://m.mooban.cn/" target="_blank">掌上魔坊</a></li>
-                                    <li><a href="http://www.mooban.cn/tool/search.html" target="_blank">全站搜索</a></li>
-                                    <li><a href="http://announce.mooban.cn/" target="_blank">公告中心</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">工具</li>
-                                    <li><a href="http://www.mooban.cn/tool/mobian/" target="_blank">魔变扩展</a></li>
-                                    <li><a href="http://moyan.mooban.cn/" target="_blank">魔眼插件</a></li>
-                                    <li><a href="http://www.mooban.cn/tool/ocr.html" target="_blank">图片识文</a></li>
-                                    <li><a href="http://st.mooban.cn/?fr=mooban" target="_blank">新标签页</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </li>
             </ul>
             <div class="uk-navbar-content uk-hidden-medium">
@@ -409,9 +141,8 @@
 </div>
 <div class="mb-cover">
     <div class="b20"></div>
-    <link rel="stylesheet" type="text/css" href="http://www.mooban.cn/member/image/style_response.css"/>
-    <script type="text/javascript" src="http://www.mooban.cn/file/script/admin.js"></script>
-    <script type="text/javascript" src="http://www.mooban.cn/file/script/member_response.js"></script>
+
+
     <div id="msgbox" style="display:none;"></div>
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin>
@@ -421,7 +152,7 @@
                         <div class="uk-text-center uk-margin-small-bottom mb-member-home">
                             <a data-uk-tooltip="{pos:'top',offset:5,animation:true}" title="返回魔工坊首页" href="http://www.mooban.cn/" class="uk-border-circle uk-thumbnail uk-overlay-toggle thumb_hover">
                                 <div class="uk-overlay uk-border-circle">
-                                    <img class="a2 uk-border-circle uk-icon-spin" width="90" height="90" src="http://www.mooban.cn/skin/moob/image/favorite.gif" alt="魔工坊-模板列表">
+                                    <!--<img class="a2 uk-border-circle uk-icon-spin" width="90" height="90" src="http://www.mooban.cn/skin/moob/image/favorite.gif" alt="魔工坊-模板列表">-->
                                     <div class="uk-overlay-area uk-border-circle"></div>
                                 </div>
                             </a>
@@ -437,7 +168,7 @@
             </div>
             <div class="uk-width-medium-5-6" id="mb_list_right">
                 <div class="uk-panel uk-panel-box uk-panel-box-secondary">
-                    <script type="text/javascript">c(2);</script>
+
                     <div class="uk-alert uk-alert-warning" data-uk-alert>
                         <a href="" class="uk-alert-close uk-close"></a>
                         <p><i class="uk-icon-exclamation-triangle"></i>
@@ -449,16 +180,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        //覆盖admin.js
-        function Dwidget(u, t, w, h) {
-            var w = w ? w : (document.body.scrollWidth - 100);
-            var h = h ? h : ($(window).height() - 100);
-            mkDialog('', '<iframe src="'+u+'&widget=1" width="'+w+'" height="'+h+'" border="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" framespacing="0" frameborder="0" scrolling="yes"></iframe>', t, w+20, 0, 0,null,200+$(document).scrollTop());
-        }
-        var destoon_message = 0;
-        var destoon_chat = 0;
-    </script><div class="b20"></div>
+   <div class="b20"></div>
     <div class="footer" data-uk-grid-margin>
         <div class="uk-progress uk-progress-striped uk-active border_radius0">
             <div class="uk-progress-bar width-100"></div>
@@ -494,60 +216,6 @@
         </div>
     </div>
 </div>
-<script>
-    var destoon_userid = 0;
-    var destoon_username = '';
-    var destoon_message = 0;
-    var destoon_mid = 2;
-    var destoon_chat = 0;
-    var destoon_cart = substr_count(get_cookie('cart'), ',');
-    var destoon_member = '' ,mb_member_touch ='';
-    set_cookie('username','');
-    var oauth_site = '';
-    var oauth_user = '';
-    if( oauth_user && oauth_site){
-        var destoon_member1 ='';
-        destoon_member1 += '<div class="uk-button-group">';
-        destoon_member1 += '<a title="昵称: '+oauth_user+'" data-uk-tooltip="{pos:\'bottom\',animation:true}" class="uk-button uk-button-primary f_white mr5" href="http://www.mooban.cn/api/oauth//index.php?time=1515288771"><i class="uk-icon-"></i> 绑定</a>';
-        destoon_member1 += '<a class="uk-button uk-button-primary f_white" href="http://www.mooban.cn/member/oauthLogout.php" data-uk-tooltip="{pos:\'bottom\',animation:true}" title="亲，绑定后，可一键登录额">注销</a>';
-        destoon_member1 += '</div>';
-        destoon_member +=destoon_member1;
-    }else{
-        var destoon_member2 ='';
-        destoon_member2 += '<div class="uk-button-group">';
-        destoon_member2 += '<a class="uk-button uk-button-primary f_white mr5" href="http://www.mooban.cn/member/register.php">免费注册</a>';
-        destoon_member2 += '<a class="uk-button uk-button-primary f_white" href="http://www.mooban.cn/member/login.php">立即登录</a>';
-        destoon_member2 += '</div>';
-        destoon_member +=destoon_member2;
-    }
-    mb_member_touch += '<li> <a href="http://www.mooban.cn/member/register.php">&nbsp;&nbsp;&nbsp;&nbsp;<i class="uk-icon-mail-forward"></i> 免费注册</a></li>';
-    mb_member_touch += '<li> <a href="http://www.mooban.cn/member/login.php">&nbsp;&nbsp;&nbsp;&nbsp;<i class="uk-icon-mail-forward"></i> 立即登录</a></li>';
-    $('#destoon_member').html(destoon_member);
-    $('#mb_member_touch').html(mb_member_touch);
-    $(function(){$("img").lazyload();});
-    NProgress.done(true);
-    $(".mb_spinner").hide();
-</script>
-<script>
-    (function(){
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?7dd7ba5dae6db1993d86af0ce4d68a05";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+
 </body>
 </html>

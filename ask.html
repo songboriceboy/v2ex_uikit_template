@@ -130,7 +130,8 @@
                     <h2 class="list_cat"><a href="http://www.mooban.cn/know/search-htm-typeid-4.html" class="b" target="_blank" rel="nofollow"><i class="uk-icon-thumbs-up mb-a"></i> 精彩推荐问答</a></h2>
                     <hr>
                     <table class="uk-table uk-table-hover">
-                        <tbody><tr class="list_cat">
+                        <tbody>
+                        <tr class="list_cat">
                             <td width="20" class="uk-text-middle">
                                 <a href="http://www.mooban.cn/know/search-htm-username-dudu.html" rel="nofollow" target="_blank"><img class="mb-a uk-border-circle" src="http://www.mooban.cn/api/avatar/show.php?username=dudu&amp;size=small" width="20" alt="dudu" title="Dudu 发布的问题" data-uk-tooltip="{pos:'left',animation:true}"></a>
                             </td>
@@ -480,7 +481,7 @@
                         <input type="hidden" name="action" value="add">
                         <input type="hidden" name="kw" value="" id="ask_kw">
                     </form>
-                    <form action="http://www.mooban.cn/know/search.php" onsubmit="return know_sch_check();" class="uk-form">
+                    <form action="http://www.mooban.cn/know/search.php"  class="uk-form">
                         <input type="hidden" name="typeid" value="99" id="know_typeid">
                         <div class="uk-form-row">
                             <input type="text" name="kw" id="know_kw" placeholder="请输入问题" class="uk-width-1-1">
@@ -491,17 +492,7 @@
                             <input type="button" value="我提问" class="uk-button f_white uk-button-primary" onclick="if(know_sch_check()){Dd('ask_kw').value=Dd('know_kw').value;Dd('ask_form').submit();}">
                         </div>
                     </form>
-                    <script type="text/javascript">
-                        function know_sch_check() {
-                            if(Dd('know_kw').value == '请输入问题' || Dd('know_kw').value.length < 1) {
-                                dialog(1,'请输入问题',function(){
-                                    Dd('know_kw').focus();
-                                });
-                                return false;
-                            }
-                            return true;
-                        }
-                    </script>
+
                     <div class="uk-alert">
                         <i class="uk-icon-comments"></i> 已解决问题总数：<b>38</b> 个
                         <br><i class="uk-icon-comments-o"></i> 待解决问题总数：<b>27</b> 个

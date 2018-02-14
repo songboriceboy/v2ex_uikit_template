@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/vue/vue.js"></script>
+</head>
+<body>
+<div class="page-bar">
+    <ul class="pagination">
+        <li v-if="cur>1"><a v-on:click="cur--,pageClick()">上一页</a></li>
+        <li v-if="cur==1"><a>上一页</a></li>
+        <li v-for="index in indexs"  v-bind:class="{ 'active': cur == index}">
+            <a v-on:click="btnClick(index)">{{ index }}</a>
+        </li>
+        <li v-if="cur!=all"><a v-on:click="cur++,pageClick()">下一页</a></li>
+        <li v-if="cur == all"><a>下一页</a></li>
+        <li><a>共<i>{{all}}</i>页</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    var pageBar = new Vue({
+        el: '.page-bar',
+        data: {
+            total: 75, //总记录数
+            pageSize:10,
+            cur: 1//当前页码
+        },
+        watch: {
+            cur: function(currValue , oldValue){
+                console.log('oldValue'+ oldValue);
+                console.log('currValue'+currValue);
+            }
+        },
+        methods: {
+            btnClick: function(data){//页码点击事件
+                if(data != this.cur){
+                    this.cur = data
+                }
+            },
+            pageClick: function(){
+                console.log('现在在'+this.cur+'页');
+            }
+        },
+
+        computed: {
+            all:function() { // 总页数
+                return Math.ceil(this.total / this.pageSize);
+            },
+            indexs: function(){
+                var left = 1;
+                var right = this.all;
+                var ar = [];
+                if(this.all>= 5){
+                    if(this.cur > 3 && this.cur < this.all-2){
+                        left = this.cur - 2
+                        right = this.cur + 2
+                    }else{
+                        if(this.cur<=3){
+                            left = 1
+                            right = 5
+                        }else{
+                            right = this.all
+                            left = this.all -4
+                        }
+                    }
+                }
+                while (left <= right){
+                    ar.push(left)
+                    left ++
+                }
+                return ar
+            }
+
+        }
+    })
+</script>
+</body>
+</html>

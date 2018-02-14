@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>有路网整体布局</title>
+    <link href="reset.css" rel="stylesheet">
+    <style type="text/css">
+
+        .top1{
+            height: 30px;
+            background-color: #F4F4F4;
+            /*background-color: gray;*/
+        }
+        .top2{
+            height: 104px;
+            /*background-color: green;*/
+        }
+        .top3{
+            height: 38px;
+            background-color: #D80000;
+            /*margin-top: 30px;*/
+        }
+        .main{
+            width: 1200px;
+            margin:0px auto;
+            /*position: relative;*/
+        }
+        .main_left{
+            width: 210px;
+            /*height: 968px;*/
+            /*background-color: blue;*/
+            float: left;
+        }
+        .main_top{
+            width: 980px;
+            height: 30px;
+            /*background-color: pink;*/
+            float: left;
+            padding-left: 10px;
+            line-height: 30px;
+
+        }
+
+        .main_right{
+            width: 220px;
+            /*height: 937px;*/
+            /*background-color: blue;*/
+            float: right;
+        }
+        .d1{
+            float: left;
+            width: 750px;
+            /*height: 340px;*/
+            /*background-color: red;*/
+            margin:0px 10px;
+        }
+        .d2{
+            float: left;
+            width: 750px;
+            /*height: 597px;*/
+            /*background-color: green;*/
+            margin:0px 10px;
+        }
+
+
+
+
+        .black-board h2{
+            font-size: 18px;
+            padding-top: 6px;
+            /*border: 1px solid red;*/
+            padding-bottom: 6px;
+        }
+
+        .black-board a{
+            color: black;
+            line-height: 22px;
+        }
+
+        .black-board a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        .black-board ul{
+            padding-left: 22px;
+            padding-bottom: 6px;
+        }
+        .black-board .report
+        {
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            padding-left: 10px;
+        }
+        .black-board .shopping{
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        .book-info
+        {
+            width: 210px;
+        }
+        .book-info li
+        {
+            border: 1px solid gray;
+            /*border-right: 1px solid gray;*/
+            padding-left: 30px;
+            padding-right: 18px;
+            padding-bottom: 10px;
+
+        }
+        .book-info h2
+        {
+            font-size: 14px;
+            padding-left: 4px;
+            padding-top: 6px;
+            margin-bottom: 4px;
+        }
+        .book-info a{
+            line-height: 24px;
+            color: #666666;
+        }
+        .book-info a:hover{
+            text-decoration: underline;
+        }
+        .book-browse h3
+        {
+            border: 1px solid gray;
+            font-size: 14px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+        }
+        .book-info h3 a:hover{
+            color: orange;
+        }
+
+        .nav{
+            width: 1200px;
+            margin: 0 auto;
+            height: 30px;
+            line-height: 30px;
+
+        }
+        .nav .welcome{
+            /*padding-left: 120px;*/
+            margin-right:276px;
+        }
+
+        .nav li{
+            display: inline-block;
+            /*border: 1px solid blue;*/
+
+        }
+        .nav li a{
+            /*border: 1px solid red;*/
+            color: black;
+            padding: 0px 12px;
+            border-right: 1px solid gray;
+        }
+        .nav li a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        .nav .red
+        {
+            color: red;
+        }
+        .nav .last
+        {
+            border-right: 0px solid gray;
+        }
+
+        .search-bar{
+            width: 1200px;
+            margin: 40px auto 0;
+            overflow: hidden;
+            /*border: 3px solid black;*/
+        }
+
+        .search-bar .logo{
+            float: left;
+            margin-right: 64px;
+            /*border: 1px solid blue;*/
+        }
+        .search-bar .search-block{
+            /*border: 1px solid blue;*/
+            float: left;
+        }
+        .search-bar .cart{
+            float: right;
+            /*border: 1px solid blue;*/
+        }
+
+        .search-bar .hot-search li{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: bold;
+            padding: 0px 2px;
+        }
+
+        .search-bar .hot-search li a{
+            color: gray;
+        }
+        .search-bar .hot-search li a:hover
+        {
+            text-decoration: underline;
+            color: orange;
+        }
+
+        .search-bar .cart
+        {
+            background-image: url("img/cart.jpg");
+            background-repeat: no-repeat;
+            /*border: 1px solid blue;*/
+            padding-left: 44px;
+            line-height: 20px;
+        }
+
+        .search-bar .cart a{
+            color: black;
+        }
+        .search-bar .cart a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar .cart span{
+            color: red;
+            font-weight: bold;
+        }
+
+        .search{
+            width: 509px;
+            margin: 0 auto;
+            /*margin-top: 60px;*/
+            height: 40px;
+        }
+
+        .search .input{
+            width: 400px;
+            height: 36px;
+            border: 3px solid red;
+            font-size: 20px;
+        }
+        .search .btn{
+            vertical-align: top;
+            height: 42px;
+            width: 100px;
+            margin-left: -3px;
+            border: 0px solid black;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 6px;
+            cursor: pointer;
+        }
+
+        .red-nav{
+            height: 38px;
+            margin: 0 auto;
+            width: 1200px;
+            background-color: #D80000;
+            margin:0 auto;
+
+        }
+        .red-nav li{
+            float: left;
+            line-height: 38px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0 25px;
+
+        }
+        .red-nav li a{
+
+            color: white;
+
+        }
+        .red-nav li:hover{
+            background-color: #C90000;
+        }
+        .red-nav .first{
+            background-color: #C90000;
+            padding-left: 20px;
+            padding-right: 100px;
+            /*margin-right: 100px;*/
+        }
+
+        .book-recommend{
+            width: 750px;
+            margin: 0 auto;
+        }
+        .book-recommend .header
+        {
+            border-bottom: 1px solid gray;
+            background-image: url("img/laba.jpg");
+            background-repeat: no-repeat;
+            background-position: 0px 8px;
+            /*border: 1px solid red;*/
+        }
+        .book-recommend .header div{
+            float: right;
+            padding-top: 6px;
+            padding-right: 6px;
+            font-size: 16px;
+        }
+        .book-recommend .header div span{
+            color: red;
+        }
+        .book-recommend .header h2
+        {
+            font-size: 22px;
+            font-weight: bold;
+            padding-left: 20px;
+            padding-bottom: 8px;
+        }
+        .content
+        {
+            padding-top: 10px;
+        }
+
+        .content div{
+            text-align: left;
+            padding-left: 30px;
+            line-height: 32px;
+        }
+        .content li
+        {
+            width: 187px;
+            float: left;
+            text-align: center;
+        }
+        .content .price{
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .content .price .discount{
+            color: red;
+            font-weight: bold;
+            margin-right: 6px;
+        }
+
+        .content .price .origin-price{
+            color: gray;
+            text-decoration: line-through;
+        }
+        .content .author{
+            color:gray;
+        }
+
+        .content li a{
+            color: black;
+        }
+        .content li a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .content li img
+        {
+            max-width: 160px;
+            height: 160px;
+
+        }
+        .lunbotu{
+            /*border: 1px solid blue;*/
+            width: 750px;
+            position: relative;
+        }
+        .lunbotu ul{
+            position: absolute;
+            right: 12px;
+            bottom: 20px;
+            /*border: 1px solid orange;*/
+        }
+        .lunbotu ul li
+        {
+            color: white;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: gray;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            margin: 0 5px;
+        }
+        .hot{
+            width: 220px;
+            /*border: 1px solid red;*/
+            float: right;
+        }
+        .hot h2{
+            font-size: 16px;
+            line-height: 40px;
+            padding-left: 34px;
+        }
+        .hot ul{
+            border: 1px solid gray;
+            font-size: 14px;
+        }
+        .hot li .book1{
+
+            line-height: 44px;
+            border-bottom: 1px dashed gray;
+            padding-left: 14px;
+
+        }
+        .hot li span
+        {
+            margin-right: 6px;
+            font-weight: bold;
+
+        }
+
+        .hot .red{
+            color: red;
+        }
+        .hot .book2
+        {
+            display: none;
+        }
+        .hot .book2{
+            height: 102px;
+            border-bottom: 1px dashed gray;
+        }
+        .hot .book2 div{
+            margin-top: 6px;
+            float: left;
+        }
+        .hot .book2 img
+        {
+            width: 76px;
+
+        }
+
+        .hot .book2 .nored{
+            margin-left: 10px;
+            display: inline-block;
+            margin-top: 6px;
+        }
+        .hot .book2 .red
+        {
+            margin-left: 10px;
+            display: inline-block;
+            margin-top: 6px;
+        }
+        .hot .book2 .title{
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .hot .book2 .discount-price{
+            font-size: 16px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .hot .book2 .old-price{
+            font-size: 14px;
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .hot li:hover .book1{
+            display: none;
+        }
+        .hot li:hover .book2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="top1">
+    <div class="nav">
+        <ul>
+            <li class="welcome">
+                <img src="welcome.jpg">
+                您好，欢迎光临有路网！
+            </li>
+            <li><a href="#" class="red">我的有路</a></li>
+            <li><a href="#">我的有路</a></li>
+            <li><a href="#">我的有路</a></li>
+            <li><a href="#">我的有路</a></li>
+            <li><a href="#">我的有路</a></li>
+            <li><a href="#">我的有路</a></li>
+            <li>
+                <a href="#">
+                    <img src="ico_phone.gif">
+                    我的有路
+                </a>
+            </li>
+            <li><a href="#" class="last">我的有路</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="top2 search-bar">
+    <div class="logo">
+        <img src="img/logo.jpg">
+    </div>
+    <div class="search-block">
+        <div class="search">
+            <form action="#">
+                <input type="text" class="input" placeholder="书名"><input type="submit" value="搜索" class="btn">
+            </form>
+        </div>
+        <div class="hot-search">
+
+            <ul>
+                <li>热门搜索：</li>
+                <li><a href="#">高等数学</a></li>
+                <li><a href="#">高等数学</a></li>
+                <li><a href="#">高等数学</a></li>
+                <li><a href="#">高等数学</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart">
+        <div><a href="#">网站购物车<span>3</span>本</a></div>
+        <div><a href="#">网站购物车<span>0</span>本</a></div>
+    </div>
+</div>
+<div class="top3">
+    <div class="red-nav">
+        <ul>
+            <li class="first">
+                <a href="#">全部图书分类</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+            <li>
+                <a href="#">考试</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="main">
+
+    <div class="main_left book-info">
+        <div class="book-category">
+            <ul>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+                <li>
+                    <h2>经济管理</h2>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                    <a href="#">市场营销</a>
+                </li>
+            </ul>
+        </div>
+        <div class="book-browse">
+            <h3><a href="#">浏览所有图书分类</a></h3>
+        </div>
+        <div class="book-ads">
+            <a href="#"><img src="img/haoshu.jpg"></a>
+        </div>
+    </div>
+    <div class="main_top">
+        <a href="" target="_blank">如何购买</a>&nbsp;|&nbsp;<a href="" target="_blank">如何支付</a>&nbsp;|&nbsp;<a href=""
+                                                                                                           target="_blank">旧书缺货怎么办</a>&nbsp;|&nbsp;<a
+            href="" target="_blank">配送方式与配送费</a>&nbsp;|&nbsp;<a href="" target="_blank">普通会员与VIP会员</a>&nbsp;|&nbsp;<a
+            href="" target="_blank">有路积分说明</a>&nbsp;|&nbsp;<a href="" target="_blank">有路礼券说明</a>&nbsp;|&nbsp;<a href=""
+                                                                                                                target="_blank">账户余额说明</a>&nbsp;|&nbsp;<a
+            href="" target="_blank">退款退货说明</a>&nbsp;|&nbsp;<a href="" target="_blank">电子书购买说明</a>
+    </div>
+    <div class="main_right">
+        <div class="black-board">
+            <div class="report">
+                <h2>黑板报</h2>
+                <ul>
+                    <li><a href="#">双十一积分兑好礼</a></li>
+                    <li><a href="#">双十一积分兑好礼</a></li>
+                    <li><a href="#">双十一积分兑好礼</a></li>
+                    <li><a href="#">双十一积分兑好礼</a></li>
+                </ul>
+            </div>
+            <div class="shopping">
+                <h2>购物指南</h2>
+                <ul>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                    <li><a href="#">支付宝担保交易，安全快捷</a></li>
+                </ul>
+            </div>
+            <div class="ads">
+                <img src="img/zhinan.jpg">
+            </div>
+        </div>
+        <div class="hot">
+            <h2>近期热销榜</h2>
+            <ul>
+                <li>
+                    <div class="book1"><span class="red">1</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="red">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span class="red">1</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="red">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span class="red">1</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="red">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">4</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="book1"><span>4</span>如果蜗牛有爱情（上下</div>
+                    <div class="book2">
+                        <div><span class="nored">1</span></div>
+                        <div><img src="img/萤火虫小巷.jpg"></div>
+                        <div>
+                            <p class="title">萤火虫小巷</p>
+                            <p class="discount-price">￥14.40</p>
+                            <p class="old-price">￥36.00</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="d1 lunbotu">
+        <img src="img/dazhuanpan.jpg">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="d2 book-recommend">
+        <div class="header">
+            <div><span>1</span>/4</div>
+            <h2>推荐图书</h2>
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="img/狼图腾.jpg">
+                    <div><a href="#">狼图腾（修订版）</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/文化苦旅.jpg">
+                    <div><a href="#">狼图腾（修订版）</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/平凡的世界.jpg">
+                    <div><a href="#">狼图腾（修订版）</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/偷影子的人.jpg">
+                    <div><a href="#">狼图腾（修订版）</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/狼图腾.jpg">
+                    <div><a href="#">狼图腾（修订版）5</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/狼图腾.jpg">
+                    <div><a href="#">狼图腾（修订版）6</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/蔡永康.jpg">
+                    <div><a href="#">狼图腾（修订版）7</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/狼图腾.jpg">
+                    <div><a href="#">狼图腾（修订版）</a></div>
+                    <div class="author">姜戎</div>
+                    <div class="price">
+                        <span class="discount">¥15.90</span>
+                        <span class="origin-price">¥39.80</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
